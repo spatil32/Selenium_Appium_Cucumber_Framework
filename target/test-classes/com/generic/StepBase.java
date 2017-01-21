@@ -33,9 +33,9 @@ public class StepBase
 		scenario = cScenario;
 		try 
 		{
-			startAppium();
-			//System.out.println("Platform = " + System.getProperty("platform"));
-			//System.out.println("Device = " + System.getProperty("device"));
+			//startAppium();
+			System.out.println("Platform = " + System.getProperty("platform"));
+			System.out.println("Device = " + System.getProperty("device"));
 			Properties objConfig = new Properties();
 			if(System.getProperty("platform").equalsIgnoreCase("android"))
 			{
@@ -47,18 +47,15 @@ public class StepBase
 			}
 			Properties mobileConfig = new Properties();
 			mobileConfig.load(new FileInputStream(System.getProperty("user.dir") + "/src/test/java/com/mobileConfig/" + System.getProperty("device") + ".properties"));
-			//mobileConfig.load(new FileInputStream(System.getProperty("user.dir") + "/src/test/java/com/mobileConfig/" + "HTC_Desire_800_4.1.2.properties"));
 
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 			capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, mobileConfig.getProperty("device.name"));
-			//capabilities.setCapability(MobileCapabilityType.FULL_RESET, false);
 			capabilities.setCapability(MobileCapabilityType.APP, objConfig.getProperty("test.app"));
 			capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, mobileConfig.getProperty("device.platform"));
 			capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, mobileConfig.getProperty("device.platformVersion"));
 			
 			StepBase.driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
 			webDriverWait = new WebDriverWait(driver, 10L);
-			//driver.launchApp();
 		}
 		catch (Exception e)
 		{
@@ -87,6 +84,8 @@ public class StepBase
 		return StepBase.driver;
 	}
 	
+	/*
+	 *Error to be resolved at later stage.
 	public void startAppium()
 	{
 		try
@@ -111,4 +110,5 @@ public class StepBase
 			e.printStackTrace();
 		}
 	}
+	*/
 }
