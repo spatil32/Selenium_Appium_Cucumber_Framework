@@ -18,10 +18,55 @@ public class LoginPage
 	@AndroidFindBy(id="lblFormName")
 	public WebElement lblLogin;
 	
+	@AndroidFindBy(id="switchButton")
+	public WebElement swtButton;
+	
+	@AndroidFindBy(id="txtLoginEmail")
+	public WebElement txtLogin;
+	
+	@AndroidFindBy(id="txtLoginPassword")
+	public WebElement txtPassword;
+	
+	@AndroidFindBy(id="btnLoginDoctor")
+	public WebElement btnLogin;
+	
+	@AndroidFindBy(id="btnRegisterDoctor")
+	public WebElement btnRegister;
+	
 	public String GetLoginText()
 	{
 		return lblLogin.getText();
 	}
 	
+	public String GetLoginName()
+	{
+		return txtLogin.getText();
+	}
 	
+	public void setLoginName(String email) 
+	{
+		txtLogin.clear();
+		txtLogin.sendKeys(email);
+	}
+	
+	public void setPasswordName(String password) 
+	{
+		txtLogin.clear();
+		txtLogin.sendKeys(password);
+	}
+
+	public String GetPassword()
+	{
+		return txtPassword.getText();
+	}
+	
+	public void clickLogin()
+	{
+		btnLogin.click();
+	}
+	
+	public void clickRegister()
+	{
+		btnRegister.click();
+	}
 }
