@@ -46,7 +46,7 @@ public class PatientRegistrationPage
 	
 	@AndroidFindBy(id="bCancel")
 	public WebElement btnpaientRegCancel;
-
+	
 	public String getPatientFirstName() 
 	{
 		return txtPatientFirstName.getText();

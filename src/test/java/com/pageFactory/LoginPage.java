@@ -51,13 +51,18 @@ public class LoginPage
 	
 	public void setPasswordName(String password) 
 	{
-		txtLogin.clear();
-		txtLogin.sendKeys(password);
+		txtPassword.clear();
+		txtPassword.sendKeys(password);
 	}
 
 	public String GetPassword()
 	{
 		return txtPassword.getText();
+	}
+	
+	public void clickSwitch()
+	{
+		swtButton.clear();
 	}
 	
 	public void clickLogin()

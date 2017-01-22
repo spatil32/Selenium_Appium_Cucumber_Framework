@@ -1,4 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: com.features.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 53.021 sec
+Tests run: 28, Failures: 2, Errors: 0, Skipped: 8, Time elapsed: 130.38 sec <<< FAILURE!
+Then I see Shreyas(| Login | Registration Form | Shreyas | Patil | 12345 | patilsr91@gmail.com | 1111 | 3128891919 | abcd |)  Time elapsed: 0.009 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: Shreyas text not found.
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at com.stepDefinitions.PatientRegistrationSteps.I_see_Text(PatientRegistrationSteps.java:33)
+	at ?.Then I see Shreyas(PatientRegistration.feature:22)
+
+| Login | Registration Form | Shreyas | Patil | 12345 | patilsr91@gmail.com | 1111 | 3128891919 | abcd |  Time elapsed: 0.01 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: Shreyas text not found.
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at com.stepDefinitions.PatientRegistrationSteps.I_see_Text(PatientRegistrationSteps.java:33)
+	at ?.Then I see Shreyas(PatientRegistration.feature:22)
+

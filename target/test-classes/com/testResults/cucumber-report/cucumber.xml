@@ -1,7 +1,53 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="51.991884">
-<testcase classname="Patient Registration &amp; Login" name="As a valid user Patient can register &amp; login to my application" time="51.991884">
-<system-out><![CDATA[Given my application is open................................................passed
-Then I see "Login"..........................................................passed
-]]></system-out>
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="131.103332">
+<testcase classname="Patient Registration &amp; Login" name="As a valid user Patient can register &amp; login to my application" time="131.103332">
+<failure message="org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Soft keyboard not present, cannot hide keyboard (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 177 milliseconds&#10;Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'&#10;System info: host: 'Shreyas-PC', ip: '192.168.0.102', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities [{app=C://Users//Shreyas//workspace//EHS_Appium_Automation//application_files//EHS.apk, appPackage=com.spatil32.emergency_health_services, networkConnectionEnabled=true, noReset=true, warnings={}, appWaitPackage=com.spatil32.emergency_health_services, appWaitActivity=com.spatil32.emergency_health_services.MainActivity, databaseEnabled=false, deviceName=ZY223F77GW, platform=LINUX, deviceUDID=ZY223F77GW, appActivity=com.spatil32.emergency_health_services.MainActivity, desired={app=C://Users//Shreyas//workspace//EHS_Appium_Automation//application_files//EHS.apk, noReset=true, platformVersion=7.0, platformName=Android, deviceName=ZY223F77GW}, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]&#10;Session ID: 41b6260f-deb7-49b3-a10c-70575ae90a47&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)&#13;&#10;&#9;at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)&#13;&#10;&#9;at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:235)&#13;&#10;&#9;at io.appium.java_client.AppiumDriver.hideKeyboard(AppiumDriver.java:305)&#13;&#10;&#9;at com.stepDefinitions.LoginSteps.I_press_login_button(LoginSteps.java:31)&#13;&#10;&#9;at ✽.Then I press the Login Page Login button(PatientRegistration.feature:21)&#13;&#10;"><![CDATA[Given my application is open................................................passed
+Then I see Login............................................................passed
+Then I press the Register button............................................passed
+Then I see Registration Form................................................passed
+Then I enter Shreyas in the Patinet First Name field........................passed
+Then I enter Patil in the Patient Last Name field...........................passed
+Then I enter 12345 in the Patient SSN field.................................passed
+Then I enter patilsr91@gmail.com in the Patient Email field.................passed
+Then I enter 1111 in the Patient Contact field..............................passed
+Then I enter 3128891919 in the Patient Emergency Contact field..............passed
+Then I enter abcd in the Patient Password field.............................passed
+Then I enter abcd in the Patient Conform Password field.....................passed
+Then I press the Patient Register button....................................passed
+Then I see Login............................................................passed
+Then I check gmail account confirmation mail................................passed
+Then I enter patilsr91@gmail.com in the LoginPage Email field...............passed
+Then I enter abcd in the LoginPage Password field...........................passed
+Then I press the Login Page Login button....................................failed
+Then I see Shreyas..........................................................skipped
+Then I see Patil............................................................skipped
+Then I see 12345............................................................skipped
+Then I see patilsr91@gmail.com..............................................skipped
+Then I see 1111.............................................................skipped
+Then I see 3128891919.......................................................skipped
+Then I see abcd.............................................................skipped
+Then I press the Logout button..............................................skipped
+Then I see Login............................................................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Soft keyboard not present, cannot hide keyboard (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 177 milliseconds
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'Shreyas-PC', ip: '192.168.0.102', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=C://Users//Shreyas//workspace//EHS_Appium_Automation//application_files//EHS.apk, appPackage=com.spatil32.emergency_health_services, networkConnectionEnabled=true, noReset=true, warnings={}, appWaitPackage=com.spatil32.emergency_health_services, appWaitActivity=com.spatil32.emergency_health_services.MainActivity, databaseEnabled=false, deviceName=ZY223F77GW, platform=LINUX, deviceUDID=ZY223F77GW, appActivity=com.spatil32.emergency_health_services.MainActivity, desired={app=C://Users//Shreyas//workspace//EHS_Appium_Automation//application_files//EHS.apk, noReset=true, platformVersion=7.0, platformName=Android, deviceName=ZY223F77GW}, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 41b6260f-deb7-49b3-a10c-70575ae90a47
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:235)
+	at io.appium.java_client.AppiumDriver.hideKeyboard(AppiumDriver.java:305)
+	at com.stepDefinitions.LoginSteps.I_press_login_button(LoginSteps.java:31)
+	at ✽.Then I press the Login Page Login button(PatientRegistration.feature:21)
+]]></failure>
 </testcase>
 </testsuite>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="51.991884">
-<testcase classname="Patient Registration &amp; Login" name="As a valid user Patient can register &amp; login to my application" time="51.991884">
-<system-out><![CDATA[Given my application is open................................................passed
-Then I see "Login"..........................................................passed
-]]></system-out>
-</testcase>
-</testsuite>

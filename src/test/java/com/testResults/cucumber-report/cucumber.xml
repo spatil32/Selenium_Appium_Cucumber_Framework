@@ -1,7 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="51.991884">
-<testcase classname="Patient Registration &amp; Login" name="As a valid user Patient can register &amp; login to my application" time="51.991884">
-<system-out><![CDATA[Given my application is open................................................passed
-Then I see "Login"..........................................................passed
-]]></system-out>
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="128.957942">
+<testcase classname="Patient Registration &amp; Login" name="As a valid user Patient can register &amp; login to my application" time="128.957942">
+<failure message="junit.framework.AssertionFailedError: Shreyas text not found.&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:57)&#13;&#10;&#9;at junit.framework.Assert.assertTrue(Assert.java:22)&#13;&#10;&#9;at com.stepDefinitions.PatientRegistrationSteps.I_see_Text(PatientRegistrationSteps.java:33)&#13;&#10;&#9;at ✽.Then I see Shreyas(PatientRegistration.feature:22)&#13;&#10;"><![CDATA[Given my application is open................................................passed
+Then I see Login............................................................passed
+Then I press the Register button............................................passed
+Then I see Registration Form................................................passed
+Then I enter Shreyas in the Patinet First Name field........................passed
+Then I enter Patil in the Patient Last Name field...........................passed
+Then I enter 12345 in the Patient SSN field.................................passed
+Then I enter patilsr91@gmail.com in the Patient Email field.................passed
+Then I enter 1111 in the Patient Contact field..............................passed
+Then I enter 3128891919 in the Patient Emergency Contact field..............passed
+Then I enter abcd in the Patient Password field.............................passed
+Then I enter abcd in the Patient Conform Password field.....................passed
+Then I press the Patient Register button....................................passed
+Then I see Login............................................................passed
+Then I check gmail account confirmation mail................................passed
+Then I enter patilsr91@gmail.com in the LoginPage Email field...............passed
+Then I enter abcd in the LoginPage Password field...........................passed
+Then I press the Login Page Login button....................................passed
+Then I see Shreyas..........................................................failed
+Then I see Patil............................................................skipped
+Then I see 12345............................................................skipped
+Then I see patilsr91@gmail.com..............................................skipped
+Then I see 1111.............................................................skipped
+Then I see 3128891919.......................................................skipped
+Then I see abcd.............................................................skipped
+Then I press the Logout button..............................................skipped
+Then I see Login............................................................skipped
+
+StackTrace:
+junit.framework.AssertionFailedError: Shreyas text not found.
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at com.stepDefinitions.PatientRegistrationSteps.I_see_Text(PatientRegistrationSteps.java:33)
+	at ✽.Then I see Shreyas(PatientRegistration.feature:22)
+]]></failure>
 </testcase>
 </testsuite>
