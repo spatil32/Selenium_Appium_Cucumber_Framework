@@ -1,22 +1,22 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("PatientRegistration.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("DoctorRegistration.feature");
 formatter.feature({
   "line": 2,
-  "name": "Patient Registration \u0026 Login",
+  "name": "Doctor Registration \u0026 Login",
   "description": "",
-  "id": "patient-registration-\u0026-login",
+  "id": "doctor-registration-\u0026-login",
   "keyword": "Feature",
   "tags": [
     {
       "line": 1,
-      "name": "@EHSTests"
+      "name": "@DoctorRegistration"
     }
   ]
 });
 formatter.scenarioOutline({
   "line": 3,
-  "name": "As a valid user Patient can register \u0026 login to my application",
+  "name": "As a valid user Doctor can register \u0026 login to my application",
   "description": "",
-  "id": "patient-registration-\u0026-login;as-a-valid-user-patient-can-register-\u0026-login-to-my-application",
+  "id": "doctor-registration-\u0026-login;as-a-valid-user-doctor-can-register-\u0026-login-to-my-application",
   "type": "scenario_outline",
   "keyword": "Scenario Outline"
 });
@@ -32,183 +32,165 @@ formatter.step({
 });
 formatter.step({
   "line": 6,
-  "name": "I press the Register button",
+  "name": "I click switchRole button",
   "keyword": "Then "
 });
 formatter.step({
   "line": 7,
-  "name": "I see \u003cRegistration Form\u003e text",
+  "name": "I press the Register button",
   "keyword": "Then "
 });
 formatter.step({
   "line": 8,
-  "name": "I enter \u003cfirstName\u003e in the Patinet First Name field",
+  "name": "I see \u003cRegistration Form\u003e text",
   "keyword": "Then "
 });
 formatter.step({
   "line": 9,
-  "name": "I enter \u003clastName\u003e in the Patient Last Name field",
+  "name": "I enter \u003chospitalName\u003e in the Doctors Hospital Name field",
   "keyword": "Then "
 });
 formatter.step({
   "line": 10,
-  "name": "I enter \u003cSSN\u003e in the Patient SSN field",
+  "name": "I enter \u003chospitalAddress\u003e in the Doctors Hospital Address field",
   "keyword": "Then "
 });
 formatter.step({
   "line": 11,
-  "name": "I enter \u003cemail\u003e in the Patient Email field",
+  "name": "I enter \u003cdoctorName\u003e in the Doctors Name field",
   "keyword": "Then "
 });
 formatter.step({
   "line": 12,
-  "name": "I enter \u003ccontact\u003e in the Patient Contact field",
+  "name": "I enter \u003cSSN\u003e in the Doctors SSN field",
   "keyword": "Then "
 });
 formatter.step({
   "line": 13,
-  "name": "I enter \u003cemergencyContact\u003e in the Patient Emergency Contact field",
+  "name": "I enter \u003cemail\u003e in the Doctors email field",
   "keyword": "Then "
 });
 formatter.step({
   "line": 14,
-  "name": "I enter \u003cpassword\u003e in the Patient Password field",
+  "name": "I enter \u003cpassword\u003e in the Doctors Password field",
   "keyword": "Then "
 });
 formatter.step({
   "line": 15,
-  "name": "I enter \u003cpassword\u003e in the Patient Conform Password field",
+  "name": "I enter \u003cpassword\u003e in the Doctors Conform Password field",
   "keyword": "Then "
 });
 formatter.step({
   "line": 16,
-  "name": "I press the Patient Register button",
+  "name": "I enter \u003ccontact\u003e in the Doctors Phone field",
   "keyword": "Then "
 });
 formatter.step({
   "line": 17,
-  "name": "I see \u003cLogin\u003e text",
+  "name": "I press the Doctor Register button",
   "keyword": "Then "
 });
 formatter.step({
   "line": 18,
-  "name": "I check gmail account confirmation mail",
+  "name": "I see \u003cLogin\u003e text",
   "keyword": "Then "
 });
 formatter.step({
   "line": 19,
-  "name": "I enter \u003cemail\u003e in the LoginPage Email field",
+  "name": "I check gmail account confirmation mail",
   "keyword": "Then "
 });
 formatter.step({
   "line": 20,
-  "name": "I enter \u003cpassword\u003e in the LoginPage Password field",
+  "name": "I click switchRole button",
   "keyword": "Then "
 });
 formatter.step({
   "line": 21,
-  "name": "I press the Login Page Login button",
+  "name": "I enter \u003cemail\u003e in the LoginPage Email field",
   "keyword": "Then "
 });
 formatter.step({
   "line": 22,
-  "name": "I see \u003cfirstName\u003e as firstname on Patient Registration Page",
+  "name": "I enter \u003cpassword\u003e in the LoginPage Password field",
   "keyword": "Then "
 });
 formatter.step({
   "line": 23,
-  "name": "I see \u003clastName\u003e as lastname on Patient Registration Page",
+  "name": "I press the Login Page Login button",
   "keyword": "Then "
 });
 formatter.step({
   "line": 24,
-  "name": "I see \u003cSSN\u003e as SSN on Patient Registration Page",
+  "name": "I see \u003cPatientHistory\u003e label",
   "keyword": "Then "
 });
 formatter.step({
   "line": 25,
-  "name": "I see \u003cemail\u003e as email on Patient Registration Page",
+  "name": "I press the Logout button to logout the doctor",
   "keyword": "Then "
 });
 formatter.step({
   "line": 26,
-  "name": "I see \u003ccontact\u003e as contact on Patient Registration Page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 27,
-  "name": "I see \u003cemergencyContact\u003e as emergency contact on Patient Registration Page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 28,
-  "name": "I see \u003cpassword\u003e as password on Patient Registration Page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 29,
-  "name": "I press the Logout button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 30,
   "name": "I see \u003cLogin\u003e text",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 31,
+  "line": 27,
   "name": "",
   "description": "",
-  "id": "patient-registration-\u0026-login;as-a-valid-user-patient-can-register-\u0026-login-to-my-application;",
+  "id": "doctor-registration-\u0026-login;as-a-valid-user-doctor-can-register-\u0026-login-to-my-application;",
   "rows": [
     {
       "cells": [
         "Login",
         "Registration Form",
-        "firstName",
-        "lastName",
+        "hospitalName",
+        "hospitalAddress",
+        "doctorName",
         "SSN",
         "email",
+        "password",
         "contact",
-        "emergencyContact",
-        "password"
+        "PatientHistory"
       ],
-      "line": 32,
-      "id": "patient-registration-\u0026-login;as-a-valid-user-patient-can-register-\u0026-login-to-my-application;;1"
+      "line": 28,
+      "id": "doctor-registration-\u0026-login;as-a-valid-user-doctor-can-register-\u0026-login-to-my-application;;1"
     },
     {
       "cells": [
         "Login",
         "Registration Form",
-        "Shreyas",
-        "Patil",
-        "12345",
-        "patilsr91@gmail.com",
-        "1111",
+        "Apollo",
+        "Hadapsar",
+        "Mrunal",
+        "23456",
+        "shreyas.patil91@gmail.com",
+        "abcd",
         "3128891919",
-        "abcd"
+        "Search Patient History"
       ],
-      "line": 33,
-      "id": "patient-registration-\u0026-login;as-a-valid-user-patient-can-register-\u0026-login-to-my-application;;2"
+      "line": 29,
+      "id": "doctor-registration-\u0026-login;as-a-valid-user-doctor-can-register-\u0026-login-to-my-application;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 11727976505,
+  "duration": 54581375717,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 33,
-  "name": "As a valid user Patient can register \u0026 login to my application",
+  "line": 29,
+  "name": "As a valid user Doctor can register \u0026 login to my application",
   "description": "",
-  "id": "patient-registration-\u0026-login;as-a-valid-user-patient-can-register-\u0026-login-to-my-application;;2",
+  "id": "doctor-registration-\u0026-login;as-a-valid-user-doctor-can-register-\u0026-login-to-my-application;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
       "line": 1,
-      "name": "@EHSTests"
+      "name": "@DoctorRegistration"
     }
   ]
 });
@@ -227,11 +209,16 @@ formatter.step({
 });
 formatter.step({
   "line": 6,
-  "name": "I press the Register button",
+  "name": "I click switchRole button",
   "keyword": "Then "
 });
 formatter.step({
   "line": 7,
+  "name": "I press the Register button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 8,
   "name": "I see Registration Form text",
   "matchedColumns": [
     1
@@ -239,76 +226,76 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 8,
-  "name": "I enter Shreyas in the Patinet First Name field",
+  "line": 9,
+  "name": "I enter Apollo in the Doctors Hospital Name field",
   "matchedColumns": [
     2
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 9,
-  "name": "I enter Patil in the Patient Last Name field",
+  "line": 10,
+  "name": "I enter Hadapsar in the Doctors Hospital Address field",
   "matchedColumns": [
     3
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 10,
-  "name": "I enter 12345 in the Patient SSN field",
+  "line": 11,
+  "name": "I enter Mrunal in the Doctors Name field",
   "matchedColumns": [
     4
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 11,
-  "name": "I enter patilsr91@gmail.com in the Patient Email field",
+  "line": 12,
+  "name": "I enter 23456 in the Doctors SSN field",
   "matchedColumns": [
     5
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 12,
-  "name": "I enter 1111 in the Patient Contact field",
+  "line": 13,
+  "name": "I enter shreyas.patil91@gmail.com in the Doctors email field",
   "matchedColumns": [
     6
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 13,
-  "name": "I enter 3128891919 in the Patient Emergency Contact field",
+  "line": 14,
+  "name": "I enter abcd in the Doctors Password field",
   "matchedColumns": [
     7
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 14,
-  "name": "I enter abcd in the Patient Password field",
-  "matchedColumns": [
-    8
-  ],
-  "keyword": "Then "
-});
-formatter.step({
   "line": 15,
-  "name": "I enter abcd in the Patient Conform Password field",
+  "name": "I enter abcd in the Doctors Conform Password field",
   "matchedColumns": [
-    8
+    7
   ],
   "keyword": "Then "
 });
 formatter.step({
   "line": 16,
-  "name": "I press the Patient Register button",
+  "name": "I enter 3128891919 in the Doctors Phone field",
+  "matchedColumns": [
+    8
+  ],
   "keyword": "Then "
 });
 formatter.step({
   "line": 17,
+  "name": "I press the Doctor Register button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 18,
   "name": "I see Login text",
   "matchedColumns": [
     0
@@ -316,94 +303,51 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 18,
+  "line": 19,
   "name": "I check gmail account confirmation mail",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 19,
-  "name": "I enter patilsr91@gmail.com in the LoginPage Email field",
-  "matchedColumns": [
-    5
-  ],
-  "keyword": "Then "
-});
-formatter.step({
   "line": 20,
-  "name": "I enter abcd in the LoginPage Password field",
-  "matchedColumns": [
-    8
-  ],
+  "name": "I click switchRole button",
   "keyword": "Then "
 });
 formatter.step({
   "line": 21,
-  "name": "I press the Login Page Login button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 22,
-  "name": "I see Shreyas as firstname on Patient Registration Page",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 23,
-  "name": "I see Patil as lastname on Patient Registration Page",
-  "matchedColumns": [
-    3
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 24,
-  "name": "I see 12345 as SSN on Patient Registration Page",
-  "matchedColumns": [
-    4
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 25,
-  "name": "I see patilsr91@gmail.com as email on Patient Registration Page",
-  "matchedColumns": [
-    5
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 26,
-  "name": "I see 1111 as contact on Patient Registration Page",
+  "name": "I enter shreyas.patil91@gmail.com in the LoginPage Email field",
   "matchedColumns": [
     6
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 27,
-  "name": "I see 3128891919 as emergency contact on Patient Registration Page",
+  "line": 22,
+  "name": "I enter abcd in the LoginPage Password field",
   "matchedColumns": [
     7
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 28,
-  "name": "I see abcd as password on Patient Registration Page",
+  "line": 23,
+  "name": "I press the Login Page Login button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 24,
+  "name": "I see Search Patient History label",
   "matchedColumns": [
-    8
+    9
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 29,
-  "name": "I press the Logout button",
+  "line": 25,
+  "name": "I press the Logout button to logout the doctor",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 30,
+  "line": 26,
   "name": "I see Login text",
   "matchedColumns": [
     0
@@ -414,7 +358,7 @@ formatter.match({
   "location": "PatientRegistrationSteps.My_application_is_open()"
 });
 formatter.result({
-  "duration": 731067418,
+  "duration": 722198648,
   "status": "passed"
 });
 formatter.match({
@@ -427,14 +371,21 @@ formatter.match({
   "location": "PatientRegistrationSteps.I_see_Text(String)"
 });
 formatter.result({
-  "duration": 1138364238,
+  "duration": 882953781,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginSteps.I_click_switchRole_button()"
+});
+formatter.result({
+  "duration": 456811219,
   "status": "passed"
 });
 formatter.match({
   "location": "PatientRegistrationSteps.I_press_the_Register_button()"
 });
 formatter.result({
-  "duration": 1487931397,
+  "duration": 2005535566,
   "status": "passed"
 });
 formatter.match({
@@ -447,72 +398,98 @@ formatter.match({
   "location": "PatientRegistrationSteps.I_see_Text(String)"
 });
 formatter.result({
-  "duration": 907459631,
+  "duration": 809905868,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Shreyas",
+      "val": "Apollo",
       "offset": 8
     }
   ],
-  "location": "PatientRegistrationSteps.I_enter_firstName_in_the_PatientFName_field(String)"
+  "location": "DoctorRegistrationSteps.I_enter_hospital_name_in_the_Doctors_Hospital_Name_field(String)"
 });
 formatter.result({
-  "duration": 8999077482,
+  "duration": 8460217338,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Patil",
+      "val": "Hadapsar",
       "offset": 8
     }
   ],
-  "location": "PatientRegistrationSteps.I_enter_lastName_in_the_Patient_Last_Name_field(String)"
+  "location": "DoctorRegistrationSteps.I_enter_hospital_address_in_the_Doctors_Hospital_Address_field(String)"
 });
 formatter.result({
-  "duration": 9149432200,
+  "duration": 8963097888,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "12345",
+      "val": "Mrunal",
       "offset": 8
     }
   ],
-  "location": "PatientRegistrationSteps.I_enter_SSN_in_the_Patient_SSN_field(String)"
+  "location": "DoctorRegistrationSteps.I_enter_name_in_the_Doctors_Name_field(String)"
 });
 formatter.result({
-  "duration": 9760575340,
+  "duration": 8939120550,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "patilsr91@gmail.com",
+      "val": "23456",
       "offset": 8
     }
   ],
-  "location": "PatientRegistrationSteps.I_enter_email_in_the_Patient_Email_field(String)"
+  "location": "DoctorRegistrationSteps.I_enter_ssn_in_the_Doctors_SSN_field(String)"
 });
 formatter.result({
-  "duration": 9951382307,
+  "duration": 9018214426,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "1111",
+      "val": "shreyas.patil91@gmail.com",
       "offset": 8
     }
   ],
-  "location": "PatientRegistrationSteps.I_enter_contact_in_the_Patient_Contact_field(String)"
+  "location": "DoctorRegistrationSteps.I_enter_email_in_the_Doctors_email_field(String)"
 });
 formatter.result({
-  "duration": 8835781685,
+  "duration": 9172239746,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "abcd",
+      "offset": 8
+    }
+  ],
+  "location": "DoctorRegistrationSteps.I_enter_password_in_the_Doctors_Password_field(String)"
+});
+formatter.result({
+  "duration": 9489082169,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "abcd",
+      "offset": 8
+    }
+  ],
+  "location": "DoctorRegistrationSteps.I_enter_confirm_password_in_the_Doctors_Conform_Password_field(String)"
+});
+formatter.result({
+  "duration": 9541178895,
   "status": "passed"
 });
 formatter.match({
@@ -522,43 +499,17 @@ formatter.match({
       "offset": 8
     }
   ],
-  "location": "PatientRegistrationSteps.I_enter_Emergency_Contact(String)"
+  "location": "DoctorRegistrationSteps.I_enter__phone_in_the_Doctors_Phone_field(String)"
 });
 formatter.result({
-  "duration": 8929240496,
+  "duration": 8954638974,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "abcd",
-      "offset": 8
-    }
-  ],
-  "location": "PatientRegistrationSteps.I_enter_password_in_the_Patient_Password_field(String)"
+  "location": "DoctorRegistrationSteps.I_press_the_Doctor_Register_button()"
 });
 formatter.result({
-  "duration": 8698877081,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "abcd",
-      "offset": 8
-    }
-  ],
-  "location": "PatientRegistrationSteps.I_enter_password_in_the_Patient_Confirm_Password_field(String)"
-});
-formatter.result({
-  "duration": 8922774259,
-  "status": "passed"
-});
-formatter.match({
-  "location": "PatientRegistrationSteps.I_press_the_Patient_Register_button()"
-});
-formatter.result({
-  "duration": 1627853094,
+  "duration": 1650055138,
   "status": "passed"
 });
 formatter.match({
@@ -571,27 +522,34 @@ formatter.match({
   "location": "PatientRegistrationSteps.I_see_Text(String)"
 });
 formatter.result({
-  "duration": 1155735853,
+  "duration": 1110598098,
   "status": "passed"
 });
 formatter.match({
   "location": "PatientRegistrationSteps.I_check_gmail_account_confirmation_mail()"
 });
 formatter.result({
-  "duration": 6818018328,
+  "duration": 6834154483,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginSteps.I_click_switchRole_button()"
+});
+formatter.result({
+  "duration": 1154034832,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "patilsr91@gmail.com",
+      "val": "shreyas.patil91@gmail.com",
       "offset": 8
     }
   ],
   "location": "LoginSteps.I_enter_email(String)"
 });
 formatter.result({
-  "duration": 11642598450,
+  "duration": 11822036743,
   "status": "passed"
 });
 formatter.match({
@@ -604,112 +562,34 @@ formatter.match({
   "location": "LoginSteps.I_enter_password(String)"
 });
 formatter.result({
-  "duration": 8647392197,
+  "duration": 8905495033,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.I_press_login_button()"
 });
 formatter.result({
-  "duration": 1171631074,
+  "duration": 1508226359,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Shreyas",
+      "val": "Search Patient History",
       "offset": 6
     }
   ],
-  "location": "PatientDetailsSteps.I_see_firstname_on_Patient_Registration_Page(String)"
+  "location": "PatientHistoryDetailsSteps.I_see_PatientHistory_label(String)"
 });
 formatter.result({
-  "duration": 890662271,
+  "duration": 604725814,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Patil",
-      "offset": 6
-    }
-  ],
-  "location": "PatientDetailsSteps.I_see_lastname_on_Patient_Registration_Page(String)"
+  "location": "PatientHistoryDetailsSteps.I_press_the_Logout_button_to_logout_the_doctor()"
 });
 formatter.result({
-  "duration": 193715369,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "12345",
-      "offset": 6
-    }
-  ],
-  "location": "PatientDetailsSteps.I_see_ssn_on_Patient_Registration_Page(String)"
-});
-formatter.result({
-  "duration": 251949540,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "patilsr91@gmail.com",
-      "offset": 6
-    }
-  ],
-  "location": "PatientDetailsSteps.I_see_email_on_Patient_Registration_Page(String)"
-});
-formatter.result({
-  "duration": 917335610,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1111",
-      "offset": 6
-    }
-  ],
-  "location": "PatientDetailsSteps.I_see_contact_on_Patient_Registration_Page(String)"
-});
-formatter.result({
-  "duration": 183779610,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "3128891919",
-      "offset": 6
-    }
-  ],
-  "location": "PatientDetailsSteps.I_see_emergency_contact_on_Patient_Registration_Page(String)"
-});
-formatter.result({
-  "duration": 224121807,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "abcd",
-      "offset": 6
-    }
-  ],
-  "location": "PatientDetailsSteps.I_see_password_on_Patient_Registration_Page(String)"
-});
-formatter.result({
-  "duration": 567094564,
-  "status": "passed"
-});
-formatter.match({
-  "location": "PatientDetailsSteps.I_press_the_Logout_button()"
-});
-formatter.result({
-  "duration": 4729323373,
+  "duration": 3368673308,
   "status": "passed"
 });
 formatter.match({
@@ -722,11 +602,11 @@ formatter.match({
   "location": "PatientRegistrationSteps.I_see_Text(String)"
 });
 formatter.result({
-  "duration": 327607407,
+  "duration": 589889882,
   "status": "passed"
 });
 formatter.after({
-  "duration": 3483720509,
+  "duration": 3462994404,
   "status": "passed"
 });
 });

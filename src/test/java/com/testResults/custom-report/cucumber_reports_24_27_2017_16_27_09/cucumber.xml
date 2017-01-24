@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="173.007455">
+<testcase classname="Doctor Registration &amp; Login" name="As a valid user Doctor can register &amp; login to my application" time="173.007455">
+<system-out><![CDATA[Given my application is open................................................passed
+Then I see Login text.......................................................passed
+Then I click switchRole button..............................................passed
+Then I press the Register button............................................passed
+Then I see Registration Form text...........................................passed
+Then I enter Apollo in the Doctors Hospital Name field......................passed
+Then I enter Hadapsar in the Doctors Hospital Address field.................passed
+Then I enter Mrunal in the Doctors Name field...............................passed
+Then I enter 23456 in the Doctors SSN field.................................passed
+Then I enter shreyas.patil91@gmail.com in the Doctors email field...........passed
+Then I enter abcd in the Doctors Password field.............................passed
+Then I enter abcd in the Doctors Conform Password field.....................passed
+Then I enter 3128891919 in the Doctors Phone field..........................passed
+Then I press the Doctor Register button.....................................passed
+Then I see Login text.......................................................passed
+Then I check gmail account confirmation mail................................passed
+Then I click switchRole button..............................................passed
+Then I enter shreyas.patil91@gmail.com in the LoginPage Email field.........passed
+Then I enter abcd in the LoginPage Password field...........................passed
+Then I press the Login Page Login button....................................passed
+Then I see Search Patient History label.....................................passed
+Then I press the Logout button to logout the doctor.........................passed
+Then I see Login text.......................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

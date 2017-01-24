@@ -57,9 +57,10 @@ public class DoctorRegistrationPage
 		return txtHospitalName.getText();
 	}
 
-	public void setTxtHospitalName(String txtHospitalName) 
+	public void setTxtHospitalName(String HospitalName) 
 	{
-		this.txtHospitalName.sendKeys(txtHospitalName);
+		this.txtHospitalName.clear();
+		this.txtHospitalName.sendKeys(HospitalName);
 	}
 
 	public String getTxtHospitalAddress() 
@@ -67,9 +68,10 @@ public class DoctorRegistrationPage
 		return txtHospitalAddress.getText();
 	}
 
-	public void setTxtHospitalAddress(String txtHospitalAddress) 
+	public void setTxtHospitalAddress(String HospitalAddress) 
 	{
-		this.txtHospitalAddress.sendKeys(txtHospitalAddress);
+		this.txtHospitalAddress.clear();
+		this.txtHospitalAddress.sendKeys(HospitalAddress);
 	}
 
 	public String getTxtDoctorName() 
@@ -77,9 +79,10 @@ public class DoctorRegistrationPage
 		return txtDoctorName.getText();
 	}
 
-	public void setTxtDoctorName(String txtDoctorName) 
+	public void setTxtDoctorName(String DoctorName) 
 	{
-		this.txtDoctorName.sendKeys(txtDoctorName);
+		this.txtDoctorName.clear();
+		this.txtDoctorName.sendKeys(DoctorName);
 	}
 
 	public String getTxtSSN() 
@@ -87,9 +90,10 @@ public class DoctorRegistrationPage
 		return txtSSN.getText();
 	}
 
-	public void setTxtSSN(String txtSSN) 
+	public void setTxtSSN(String SSN) 
 	{
-		this.txtSSN.sendKeys(txtSSN);
+		this.txtSSN.clear();
+		this.txtSSN.sendKeys(SSN);
 	}
 
 	public String getTxtEmail() 
@@ -97,9 +101,10 @@ public class DoctorRegistrationPage
 		return txtEmail.getText();
 	}
 
-	public void setTxtEmail(String txtEmail) 
+	public void setTxtEmail(String Email) 
 	{
-		this.txtEmail.sendKeys(txtEmail);
+		this.txtEmail.clear();
+		this.txtEmail.sendKeys(Email);
 	}
 
 	public String getTxtPassword() 
@@ -107,9 +112,10 @@ public class DoctorRegistrationPage
 		return txtPassword.getText();
 	}
 
-	public void setTxtPassword(String txtPassword) 
+	public void setTxtPassword(String Password) 
 	{
-		this.txtPassword.sendKeys(txtPassword);
+		this.txtPassword.clear();
+		this.txtPassword.sendKeys(Password);
 	}
 
 	public String getTxtConfirmPassword() 
@@ -117,9 +123,10 @@ public class DoctorRegistrationPage
 		return txtConfirmPassword.getText();
 	}
 
-	public void setTxtConfirmPassword(String txtConfirmPassword) 
+	public void setTxtConfirmPassword(String ConfirmPassword) 
 	{
-		this.txtConfirmPassword.sendKeys(txtConfirmPassword);
+		this.txtConfirmPassword.clear();
+		this.txtConfirmPassword.sendKeys(ConfirmPassword);
 	}
 
 	public String getTxtContact() 
@@ -127,9 +134,10 @@ public class DoctorRegistrationPage
 		return txtContact.getText();
 	}
 
-	public void setTxtContact(String txtContact) 
+	public void setTxtContact(String Contact) 
 	{
-		this.txtContact.sendKeys(txtContact);
+		this.txtContact.clear();
+		this.txtContact.sendKeys(Contact);
 	}
 	
 	public void clickDoctorRegistration()

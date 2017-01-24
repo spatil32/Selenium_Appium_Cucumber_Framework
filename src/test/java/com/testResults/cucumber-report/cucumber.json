@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 11727976505,
+              "duration": 54581375717,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 33,
-        "name": "As a valid user Patient can register \u0026 login to my application",
+        "line": 29,
+        "name": "As a valid user Doctor can register \u0026 login to my application",
         "description": "",
-        "id": "patient-registration-\u0026-login;as-a-valid-user-patient-can-register-\u0026-login-to-my-application;;2",
+        "id": "doctor-registration-\u0026-login;as-a-valid-user-doctor-can-register-\u0026-login-to-my-application;;2",
         "after": [
           {
             "result": {
-              "duration": 3483720509,
+              "duration": 3462994404,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 731067418,
+              "duration": 722198648,
               "status": "passed"
             },
             "line": 4,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 1138364238,
+              "duration": 882953781,
               "status": "passed"
             },
             "line": 5,
@@ -67,10 +67,22 @@
           },
           {
             "result": {
-              "duration": 1487931397,
+              "duration": 456811219,
               "status": "passed"
             },
             "line": 6,
+            "name": "I click switchRole button",
+            "match": {
+              "location": "LoginSteps.I_click_switchRole_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2005535566,
+              "status": "passed"
+            },
+            "line": 7,
             "name": "I press the Register button",
             "match": {
               "location": "PatientRegistrationSteps.I_press_the_Register_button()"
@@ -79,10 +91,10 @@
           },
           {
             "result": {
-              "duration": 907459631,
+              "duration": 809905868,
               "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "I see Registration Form text",
             "match": {
               "arguments": [
@@ -100,19 +112,19 @@
           },
           {
             "result": {
-              "duration": 8999077482,
+              "duration": 8460217338,
               "status": "passed"
             },
-            "line": 8,
-            "name": "I enter Shreyas in the Patinet First Name field",
+            "line": 9,
+            "name": "I enter Apollo in the Doctors Hospital Name field",
             "match": {
               "arguments": [
                 {
-                  "val": "Shreyas",
+                  "val": "Apollo",
                   "offset": 8
                 }
               ],
-              "location": "PatientRegistrationSteps.I_enter_firstName_in_the_PatientFName_field(String)"
+              "location": "DoctorRegistrationSteps.I_enter_hospital_name_in_the_Doctors_Hospital_Name_field(String)"
             },
             "matchedColumns": [
               2
@@ -121,19 +133,19 @@
           },
           {
             "result": {
-              "duration": 9149432200,
+              "duration": 8963097888,
               "status": "passed"
             },
-            "line": 9,
-            "name": "I enter Patil in the Patient Last Name field",
+            "line": 10,
+            "name": "I enter Hadapsar in the Doctors Hospital Address field",
             "match": {
               "arguments": [
                 {
-                  "val": "Patil",
+                  "val": "Hadapsar",
                   "offset": 8
                 }
               ],
-              "location": "PatientRegistrationSteps.I_enter_lastName_in_the_Patient_Last_Name_field(String)"
+              "location": "DoctorRegistrationSteps.I_enter_hospital_address_in_the_Doctors_Hospital_Address_field(String)"
             },
             "matchedColumns": [
               3
@@ -142,19 +154,19 @@
           },
           {
             "result": {
-              "duration": 9760575340,
+              "duration": 8939120550,
               "status": "passed"
             },
-            "line": 10,
-            "name": "I enter 12345 in the Patient SSN field",
+            "line": 11,
+            "name": "I enter Mrunal in the Doctors Name field",
             "match": {
               "arguments": [
                 {
-                  "val": "12345",
+                  "val": "Mrunal",
                   "offset": 8
                 }
               ],
-              "location": "PatientRegistrationSteps.I_enter_SSN_in_the_Patient_SSN_field(String)"
+              "location": "DoctorRegistrationSteps.I_enter_name_in_the_Doctors_Name_field(String)"
             },
             "matchedColumns": [
               4
@@ -163,19 +175,19 @@
           },
           {
             "result": {
-              "duration": 9951382307,
+              "duration": 9018214426,
               "status": "passed"
             },
-            "line": 11,
-            "name": "I enter patilsr91@gmail.com in the Patient Email field",
+            "line": 12,
+            "name": "I enter 23456 in the Doctors SSN field",
             "match": {
               "arguments": [
                 {
-                  "val": "patilsr91@gmail.com",
+                  "val": "23456",
                   "offset": 8
                 }
               ],
-              "location": "PatientRegistrationSteps.I_enter_email_in_the_Patient_Email_field(String)"
+              "location": "DoctorRegistrationSteps.I_enter_ssn_in_the_Doctors_SSN_field(String)"
             },
             "matchedColumns": [
               5
@@ -184,19 +196,19 @@
           },
           {
             "result": {
-              "duration": 8835781685,
+              "duration": 9172239746,
               "status": "passed"
             },
-            "line": 12,
-            "name": "I enter 1111 in the Patient Contact field",
+            "line": 13,
+            "name": "I enter shreyas.patil91@gmail.com in the Doctors email field",
             "match": {
               "arguments": [
                 {
-                  "val": "1111",
+                  "val": "shreyas.patil91@gmail.com",
                   "offset": 8
                 }
               ],
-              "location": "PatientRegistrationSteps.I_enter_contact_in_the_Patient_Contact_field(String)"
+              "location": "DoctorRegistrationSteps.I_enter_email_in_the_Doctors_email_field(String)"
             },
             "matchedColumns": [
               6
@@ -205,19 +217,19 @@
           },
           {
             "result": {
-              "duration": 8929240496,
+              "duration": 9489082169,
               "status": "passed"
             },
-            "line": 13,
-            "name": "I enter 3128891919 in the Patient Emergency Contact field",
+            "line": 14,
+            "name": "I enter abcd in the Doctors Password field",
             "match": {
               "arguments": [
                 {
-                  "val": "3128891919",
+                  "val": "abcd",
                   "offset": 8
                 }
               ],
-              "location": "PatientRegistrationSteps.I_enter_Emergency_Contact(String)"
+              "location": "DoctorRegistrationSteps.I_enter_password_in_the_Doctors_Password_field(String)"
             },
             "matchedColumns": [
               7
@@ -226,32 +238,11 @@
           },
           {
             "result": {
-              "duration": 8698877081,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "I enter abcd in the Patient Password field",
-            "match": {
-              "arguments": [
-                {
-                  "val": "abcd",
-                  "offset": 8
-                }
-              ],
-              "location": "PatientRegistrationSteps.I_enter_password_in_the_Patient_Password_field(String)"
-            },
-            "matchedColumns": [
-              8
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 8922774259,
+              "duration": 9541178895,
               "status": "passed"
             },
             "line": 15,
-            "name": "I enter abcd in the Patient Conform Password field",
+            "name": "I enter abcd in the Doctors Conform Password field",
             "match": {
               "arguments": [
                 {
@@ -259,7 +250,28 @@
                   "offset": 8
                 }
               ],
-              "location": "PatientRegistrationSteps.I_enter_password_in_the_Patient_Confirm_Password_field(String)"
+              "location": "DoctorRegistrationSteps.I_enter_confirm_password_in_the_Doctors_Conform_Password_field(String)"
+            },
+            "matchedColumns": [
+              7
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8954638974,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I enter 3128891919 in the Doctors Phone field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3128891919",
+                  "offset": 8
+                }
+              ],
+              "location": "DoctorRegistrationSteps.I_enter__phone_in_the_Doctors_Phone_field(String)"
             },
             "matchedColumns": [
               8
@@ -268,22 +280,22 @@
           },
           {
             "result": {
-              "duration": 1627853094,
+              "duration": 1650055138,
               "status": "passed"
             },
-            "line": 16,
-            "name": "I press the Patient Register button",
+            "line": 17,
+            "name": "I press the Doctor Register button",
             "match": {
-              "location": "PatientRegistrationSteps.I_press_the_Patient_Register_button()"
+              "location": "DoctorRegistrationSteps.I_press_the_Doctor_Register_button()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1155735853,
+              "duration": 1110598098,
               "status": "passed"
             },
-            "line": 17,
+            "line": 18,
             "name": "I see Login text",
             "match": {
               "arguments": [
@@ -301,10 +313,10 @@
           },
           {
             "result": {
-              "duration": 6818018328,
+              "duration": 6834154483,
               "status": "passed"
             },
-            "line": 18,
+            "line": 19,
             "name": "I check gmail account confirmation mail",
             "match": {
               "location": "PatientRegistrationSteps.I_check_gmail_account_confirmation_mail()"
@@ -313,31 +325,43 @@
           },
           {
             "result": {
-              "duration": 11642598450,
+              "duration": 1154034832,
               "status": "passed"
             },
-            "line": 19,
-            "name": "I enter patilsr91@gmail.com in the LoginPage Email field",
+            "line": 20,
+            "name": "I click switchRole button",
+            "match": {
+              "location": "LoginSteps.I_click_switchRole_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11822036743,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I enter shreyas.patil91@gmail.com in the LoginPage Email field",
             "match": {
               "arguments": [
                 {
-                  "val": "patilsr91@gmail.com",
+                  "val": "shreyas.patil91@gmail.com",
                   "offset": 8
                 }
               ],
               "location": "LoginSteps.I_enter_email(String)"
             },
             "matchedColumns": [
-              5
+              6
             ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 8647392197,
+              "duration": 8905495033,
               "status": "passed"
             },
-            "line": 20,
+            "line": 22,
             "name": "I enter abcd in the LoginPage Password field",
             "match": {
               "arguments": [
@@ -349,16 +373,16 @@
               "location": "LoginSteps.I_enter_password(String)"
             },
             "matchedColumns": [
-              8
+              7
             ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1171631074,
+              "duration": 1508226359,
               "status": "passed"
             },
-            "line": 21,
+            "line": 23,
             "name": "I press the Login Page Login button",
             "match": {
               "location": "LoginSteps.I_press_login_button()"
@@ -367,169 +391,43 @@
           },
           {
             "result": {
-              "duration": 890662271,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "I see Shreyas as firstname on Patient Registration Page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Shreyas",
-                  "offset": 6
-                }
-              ],
-              "location": "PatientDetailsSteps.I_see_firstname_on_Patient_Registration_Page(String)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 193715369,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "I see Patil as lastname on Patient Registration Page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Patil",
-                  "offset": 6
-                }
-              ],
-              "location": "PatientDetailsSteps.I_see_lastname_on_Patient_Registration_Page(String)"
-            },
-            "matchedColumns": [
-              3
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 251949540,
+              "duration": 604725814,
               "status": "passed"
             },
             "line": 24,
-            "name": "I see 12345 as SSN on Patient Registration Page",
+            "name": "I see Search Patient History label",
             "match": {
               "arguments": [
                 {
-                  "val": "12345",
+                  "val": "Search Patient History",
                   "offset": 6
                 }
               ],
-              "location": "PatientDetailsSteps.I_see_ssn_on_Patient_Registration_Page(String)"
+              "location": "PatientHistoryDetailsSteps.I_see_PatientHistory_label(String)"
             },
             "matchedColumns": [
-              4
+              9
             ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 917335610,
+              "duration": 3368673308,
               "status": "passed"
             },
             "line": 25,
-            "name": "I see patilsr91@gmail.com as email on Patient Registration Page",
+            "name": "I press the Logout button to logout the doctor",
             "match": {
-              "arguments": [
-                {
-                  "val": "patilsr91@gmail.com",
-                  "offset": 6
-                }
-              ],
-              "location": "PatientDetailsSteps.I_see_email_on_Patient_Registration_Page(String)"
+              "location": "PatientHistoryDetailsSteps.I_press_the_Logout_button_to_logout_the_doctor()"
             },
-            "matchedColumns": [
-              5
-            ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 183779610,
+              "duration": 589889882,
               "status": "passed"
             },
             "line": 26,
-            "name": "I see 1111 as contact on Patient Registration Page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1111",
-                  "offset": 6
-                }
-              ],
-              "location": "PatientDetailsSteps.I_see_contact_on_Patient_Registration_Page(String)"
-            },
-            "matchedColumns": [
-              6
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 224121807,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "I see 3128891919 as emergency contact on Patient Registration Page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "3128891919",
-                  "offset": 6
-                }
-              ],
-              "location": "PatientDetailsSteps.I_see_emergency_contact_on_Patient_Registration_Page(String)"
-            },
-            "matchedColumns": [
-              7
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 567094564,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "I see abcd as password on Patient Registration Page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "abcd",
-                  "offset": 6
-                }
-              ],
-              "location": "PatientDetailsSteps.I_see_password_on_Patient_Registration_Page(String)"
-            },
-            "matchedColumns": [
-              8
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 4729323373,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "I press the Logout button",
-            "match": {
-              "location": "PatientDetailsSteps.I_press_the_Logout_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 327607407,
-              "status": "passed"
-            },
-            "line": 30,
             "name": "I see Login text",
             "match": {
               "arguments": [
@@ -549,20 +447,20 @@
         "tags": [
           {
             "line": 1,
-            "name": "@EHSTests"
+            "name": "@DoctorRegistration"
           }
         ]
       }
     ],
-    "name": "Patient Registration \u0026 Login",
+    "name": "Doctor Registration \u0026 Login",
     "description": "",
-    "id": "patient-registration-\u0026-login",
+    "id": "doctor-registration-\u0026-login",
     "keyword": "Feature",
-    "uri": "PatientRegistration.feature",
+    "uri": "DoctorRegistration.feature",
     "tags": [
       {
         "line": 1,
-        "name": "@EHSTests"
+        "name": "@DoctorRegistration"
       }
     ]
   }
