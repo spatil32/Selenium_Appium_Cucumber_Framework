@@ -27,7 +27,7 @@ formatter.step({
 });
 formatter.step({
   "line": 5,
-  "name": "I see \u003cLogin\u003e",
+  "name": "I see \u003cLogin\u003e text",
   "keyword": "Then "
 });
 formatter.step({
@@ -37,7 +37,7 @@ formatter.step({
 });
 formatter.step({
   "line": 7,
-  "name": "I see \u003cRegistration Form\u003e",
+  "name": "I see \u003cRegistration Form\u003e text",
   "keyword": "Then "
 });
 formatter.step({
@@ -87,7 +87,7 @@ formatter.step({
 });
 formatter.step({
   "line": 17,
-  "name": "I see \u003cLogin\u003e",
+  "name": "I see \u003cLogin\u003e text",
   "keyword": "Then "
 });
 formatter.step({
@@ -112,37 +112,37 @@ formatter.step({
 });
 formatter.step({
   "line": 22,
-  "name": "I see \u003cfirstName\u003e",
+  "name": "I see \u003cfirstName\u003e as firstname on Patient Registration Page",
   "keyword": "Then "
 });
 formatter.step({
   "line": 23,
-  "name": "I see \u003clastName\u003e",
+  "name": "I see \u003clastName\u003e as lastname on Patient Registration Page",
   "keyword": "Then "
 });
 formatter.step({
   "line": 24,
-  "name": "I see \u003cSSN\u003e",
+  "name": "I see \u003cSSN\u003e as SSN on Patient Registration Page",
   "keyword": "Then "
 });
 formatter.step({
   "line": 25,
-  "name": "I see \u003cemail\u003e",
+  "name": "I see \u003cemail\u003e as email on Patient Registration Page",
   "keyword": "Then "
 });
 formatter.step({
   "line": 26,
-  "name": "I see \u003ccontact\u003e",
+  "name": "I see \u003ccontact\u003e as contact on Patient Registration Page",
   "keyword": "Then "
 });
 formatter.step({
   "line": 27,
-  "name": "I see \u003cemergencyContact\u003e",
+  "name": "I see \u003cemergencyContact\u003e as emergency contact on Patient Registration Page",
   "keyword": "Then "
 });
 formatter.step({
   "line": 28,
-  "name": "I see \u003cpassword\u003e",
+  "name": "I see \u003cpassword\u003e as password on Patient Registration Page",
   "keyword": "Then "
 });
 formatter.step({
@@ -152,7 +152,7 @@ formatter.step({
 });
 formatter.step({
   "line": 30,
-  "name": "I see \u003cLogin\u003e",
+  "name": "I see \u003cLogin\u003e text",
   "keyword": "Then "
 });
 formatter.examples({
@@ -195,7 +195,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 10778932424,
+  "duration": 11727976505,
   "status": "passed"
 });
 formatter.scenario({
@@ -219,7 +219,7 @@ formatter.step({
 });
 formatter.step({
   "line": 5,
-  "name": "I see Login",
+  "name": "I see Login text",
   "matchedColumns": [
     0
   ],
@@ -232,7 +232,7 @@ formatter.step({
 });
 formatter.step({
   "line": 7,
-  "name": "I see Registration Form",
+  "name": "I see Registration Form text",
   "matchedColumns": [
     1
   ],
@@ -309,7 +309,7 @@ formatter.step({
 });
 formatter.step({
   "line": 17,
-  "name": "I see Login",
+  "name": "I see Login text",
   "matchedColumns": [
     0
   ],
@@ -343,7 +343,7 @@ formatter.step({
 });
 formatter.step({
   "line": 22,
-  "name": "I see Shreyas",
+  "name": "I see Shreyas as firstname on Patient Registration Page",
   "matchedColumns": [
     2
   ],
@@ -351,7 +351,7 @@ formatter.step({
 });
 formatter.step({
   "line": 23,
-  "name": "I see Patil",
+  "name": "I see Patil as lastname on Patient Registration Page",
   "matchedColumns": [
     3
   ],
@@ -359,7 +359,7 @@ formatter.step({
 });
 formatter.step({
   "line": 24,
-  "name": "I see 12345",
+  "name": "I see 12345 as SSN on Patient Registration Page",
   "matchedColumns": [
     4
   ],
@@ -367,7 +367,7 @@ formatter.step({
 });
 formatter.step({
   "line": 25,
-  "name": "I see patilsr91@gmail.com",
+  "name": "I see patilsr91@gmail.com as email on Patient Registration Page",
   "matchedColumns": [
     5
   ],
@@ -375,7 +375,7 @@ formatter.step({
 });
 formatter.step({
   "line": 26,
-  "name": "I see 1111",
+  "name": "I see 1111 as contact on Patient Registration Page",
   "matchedColumns": [
     6
   ],
@@ -383,7 +383,7 @@ formatter.step({
 });
 formatter.step({
   "line": 27,
-  "name": "I see 3128891919",
+  "name": "I see 3128891919 as emergency contact on Patient Registration Page",
   "matchedColumns": [
     7
   ],
@@ -391,7 +391,7 @@ formatter.step({
 });
 formatter.step({
   "line": 28,
-  "name": "I see abcd",
+  "name": "I see abcd as password on Patient Registration Page",
   "matchedColumns": [
     8
   ],
@@ -404,7 +404,7 @@ formatter.step({
 });
 formatter.step({
   "line": 30,
-  "name": "I see Login",
+  "name": "I see Login text",
   "matchedColumns": [
     0
   ],
@@ -414,7 +414,7 @@ formatter.match({
   "location": "PatientRegistrationSteps.My_application_is_open()"
 });
 formatter.result({
-  "duration": 794785980,
+  "duration": 731067418,
   "status": "passed"
 });
 formatter.match({
@@ -427,14 +427,14 @@ formatter.match({
   "location": "PatientRegistrationSteps.I_see_Text(String)"
 });
 formatter.result({
-  "duration": 1144061936,
+  "duration": 1138364238,
   "status": "passed"
 });
 formatter.match({
   "location": "PatientRegistrationSteps.I_press_the_Register_button()"
 });
 formatter.result({
-  "duration": 1607084872,
+  "duration": 1487931397,
   "status": "passed"
 });
 formatter.match({
@@ -447,7 +447,7 @@ formatter.match({
   "location": "PatientRegistrationSteps.I_see_Text(String)"
 });
 formatter.result({
-  "duration": 882344203,
+  "duration": 907459631,
   "status": "passed"
 });
 formatter.match({
@@ -460,7 +460,7 @@ formatter.match({
   "location": "PatientRegistrationSteps.I_enter_firstName_in_the_PatientFName_field(String)"
 });
 formatter.result({
-  "duration": 8643866517,
+  "duration": 8999077482,
   "status": "passed"
 });
 formatter.match({
@@ -473,7 +473,7 @@ formatter.match({
   "location": "PatientRegistrationSteps.I_enter_lastName_in_the_Patient_Last_Name_field(String)"
 });
 formatter.result({
-  "duration": 8942653475,
+  "duration": 9149432200,
   "status": "passed"
 });
 formatter.match({
@@ -486,7 +486,7 @@ formatter.match({
   "location": "PatientRegistrationSteps.I_enter_SSN_in_the_Patient_SSN_field(String)"
 });
 formatter.result({
-  "duration": 8732322351,
+  "duration": 9760575340,
   "status": "passed"
 });
 formatter.match({
@@ -499,7 +499,7 @@ formatter.match({
   "location": "PatientRegistrationSteps.I_enter_email_in_the_Patient_Email_field(String)"
 });
 formatter.result({
-  "duration": 9756903380,
+  "duration": 9951382307,
   "status": "passed"
 });
 formatter.match({
@@ -512,7 +512,7 @@ formatter.match({
   "location": "PatientRegistrationSteps.I_enter_contact_in_the_Patient_Contact_field(String)"
 });
 formatter.result({
-  "duration": 9867668591,
+  "duration": 8835781685,
   "status": "passed"
 });
 formatter.match({
@@ -525,7 +525,7 @@ formatter.match({
   "location": "PatientRegistrationSteps.I_enter_Emergency_Contact(String)"
 });
 formatter.result({
-  "duration": 9082822446,
+  "duration": 8929240496,
   "status": "passed"
 });
 formatter.match({
@@ -538,7 +538,7 @@ formatter.match({
   "location": "PatientRegistrationSteps.I_enter_password_in_the_Patient_Password_field(String)"
 });
 formatter.result({
-  "duration": 9094739560,
+  "duration": 8698877081,
   "status": "passed"
 });
 formatter.match({
@@ -551,14 +551,14 @@ formatter.match({
   "location": "PatientRegistrationSteps.I_enter_password_in_the_Patient_Confirm_Password_field(String)"
 });
 formatter.result({
-  "duration": 9473516645,
+  "duration": 8922774259,
   "status": "passed"
 });
 formatter.match({
   "location": "PatientRegistrationSteps.I_press_the_Patient_Register_button()"
 });
 formatter.result({
-  "duration": 1417962624,
+  "duration": 1627853094,
   "status": "passed"
 });
 formatter.match({
@@ -571,14 +571,14 @@ formatter.match({
   "location": "PatientRegistrationSteps.I_see_Text(String)"
 });
 formatter.result({
-  "duration": 1378825996,
+  "duration": 1155735853,
   "status": "passed"
 });
 formatter.match({
   "location": "PatientRegistrationSteps.I_check_gmail_account_confirmation_mail()"
 });
 formatter.result({
-  "duration": 7012537108,
+  "duration": 6818018328,
   "status": "passed"
 });
 formatter.match({
@@ -591,7 +591,7 @@ formatter.match({
   "location": "LoginSteps.I_enter_email(String)"
 });
 formatter.result({
-  "duration": 11979691000,
+  "duration": 11642598450,
   "status": "passed"
 });
 formatter.match({
@@ -604,14 +604,14 @@ formatter.match({
   "location": "LoginSteps.I_enter_password(String)"
 });
 formatter.result({
-  "duration": 8605271083,
+  "duration": 8647392197,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.I_press_login_button()"
 });
 formatter.result({
-  "duration": 1606262440,
+  "duration": 1171631074,
   "status": "passed"
 });
 formatter.match({
@@ -621,12 +621,11 @@ formatter.match({
       "offset": 6
     }
   ],
-  "location": "PatientRegistrationSteps.I_see_Text(String)"
+  "location": "PatientDetailsSteps.I_see_firstname_on_Patient_Registration_Page(String)"
 });
 formatter.result({
-  "duration": 1186826141,
-  "error_message": "junit.framework.AssertionFailedError: Shreyas text not found.\r\n\tat junit.framework.Assert.fail(Assert.java:57)\r\n\tat junit.framework.Assert.assertTrue(Assert.java:22)\r\n\tat com.stepDefinitions.PatientRegistrationSteps.I_see_Text(PatientRegistrationSteps.java:33)\r\n\tat ✽.Then I see Shreyas(PatientRegistration.feature:22)\r\n",
-  "status": "failed"
+  "duration": 890662271,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -635,10 +634,11 @@ formatter.match({
       "offset": 6
     }
   ],
-  "location": "PatientRegistrationSteps.I_see_Text(String)"
+  "location": "PatientDetailsSteps.I_see_lastname_on_Patient_Registration_Page(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 193715369,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -647,10 +647,11 @@ formatter.match({
       "offset": 6
     }
   ],
-  "location": "PatientRegistrationSteps.I_see_Text(String)"
+  "location": "PatientDetailsSteps.I_see_ssn_on_Patient_Registration_Page(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 251949540,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -659,10 +660,11 @@ formatter.match({
       "offset": 6
     }
   ],
-  "location": "PatientRegistrationSteps.I_see_Text(String)"
+  "location": "PatientDetailsSteps.I_see_email_on_Patient_Registration_Page(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 917335610,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -671,10 +673,11 @@ formatter.match({
       "offset": 6
     }
   ],
-  "location": "PatientRegistrationSteps.I_see_Text(String)"
+  "location": "PatientDetailsSteps.I_see_contact_on_Patient_Registration_Page(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 183779610,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -683,10 +686,11 @@ formatter.match({
       "offset": 6
     }
   ],
-  "location": "PatientRegistrationSteps.I_see_Text(String)"
+  "location": "PatientDetailsSteps.I_see_emergency_contact_on_Patient_Registration_Page(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 224121807,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -695,16 +699,18 @@ formatter.match({
       "offset": 6
     }
   ],
-  "location": "PatientRegistrationSteps.I_see_Text(String)"
+  "location": "PatientDetailsSteps.I_see_password_on_Patient_Registration_Page(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 567094564,
+  "status": "passed"
 });
 formatter.match({
   "location": "PatientDetailsSteps.I_press_the_Logout_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4729323373,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -716,11 +722,11 @@ formatter.match({
   "location": "PatientRegistrationSteps.I_see_Text(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 327607407,
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png");
 formatter.after({
-  "duration": 6968863517,
+  "duration": 3483720509,
   "status": "passed"
 });
 });

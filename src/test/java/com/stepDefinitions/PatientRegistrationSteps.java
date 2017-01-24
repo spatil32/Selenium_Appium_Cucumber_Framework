@@ -27,7 +27,7 @@ public class PatientRegistrationSteps
 		objStepBase.getDriver().hideKeyboard();
 	}
 	
-	@Then("^I see (.*)$")
+	@Then("^I see (.*) text$")
 	public void I_see_Text(String text)
 	{
 		Assert.assertTrue(text + " text not found.", objLoginPage.GetLoginText().equals(text));
