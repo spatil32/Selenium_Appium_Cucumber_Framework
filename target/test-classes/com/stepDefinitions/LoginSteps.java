@@ -30,4 +30,9 @@ public class LoginSteps
 		objLoginPage.clickLogin();
 	}
 
+	@Then("^I click switchRole button$")
+	public void I_click_switchRole_button()
+	{
+		objLoginPage.clickSwitch();
+	}
 }

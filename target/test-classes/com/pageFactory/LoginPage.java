@@ -32,7 +32,7 @@ public class LoginPage
 	
 	@AndroidFindBy(id="btnRegisterDoctor")
 	public WebElement btnRegister;
-	
+
 	public String GetLoginText()
 	{
 		return lblLogin.getText();
@@ -62,7 +62,7 @@ public class LoginPage
 	
 	public void clickSwitch()
 	{
-		swtButton.clear();
+		swtButton.click();
 	}
 	
 	public void clickLogin()
