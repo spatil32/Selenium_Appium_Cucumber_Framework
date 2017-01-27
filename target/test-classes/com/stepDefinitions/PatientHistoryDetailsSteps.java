@@ -36,4 +36,22 @@ public class PatientHistoryDetailsSteps
 	{
 		objPatientHistoryPage.btnDoctorLogout.click();
 	}
+	
+	@Then("^I enter (.*) in the SearchButtonBar field$")
+	public void I_enter_query_in_the_SearchButtonBar_field(String text)
+	{
+		objPatientHistoryPage.setSearchQuery(text);
+	}
+	
+	@Then("^I click on Search Button$")
+	public void I_click_on_Search_Button()
+	{
+		objPatientHistoryPage.clickSearchHistory();
+	}
+	
+	@Then("^I check the (.*)$")
+	public void I_check_the_toastMessage(String toast)
+	{
+		objPatientHistoryPage.VerifyToastMessage(objStepBase.getDriver(), toast);
+	}
 }

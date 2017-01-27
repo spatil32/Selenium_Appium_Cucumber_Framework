@@ -1,28 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="173.007455">
-<testcase classname="Doctor Registration &amp; Login" name="As a valid user Doctor can register &amp; login to my application" time="173.007455">
-<system-out><![CDATA[Given my application is open................................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="48.451639">
+<testcase classname="Doctor gets message when contact not provided" name="Doctor gets message when contact not provided" time="48.451639">
+<failure message="org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: Locator map: &#10;- native content: &quot;By.id: search_src_text&quot; &#10;- html content: &quot;by id or name &quot;btnsearchQuery&quot;&quot;&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'&#10;System info: host: 'Shreyas-PC', ip: '192.168.0.105', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'&#10;Driver info: driver.version: unknown&#13;&#10;&#9;at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:110)&#13;&#10;&#9;at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)&#13;&#10;&#9;at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.clear(&lt;generated&gt;)&#13;&#10;&#9;at com.pageFactory.PatientHistoryPage.setSearchQuery(PatientHistoryPage.java:44)&#13;&#10;&#9;at com.stepDefinitions.PatientHistoryDetailsSteps.I_enter_query_in_the_SearchButtonBar_field(PatientHistoryDetailsSteps.java:43)&#13;&#10;&#9;at ✽.Then I enter  in the SearchButtonBar field(doctor_gets_message_when_contact_not_provided.feature:12)&#13;&#10;"><![CDATA[Given my application is open................................................passed
 Then I see Login text.......................................................passed
-Then I click switchRole button..............................................passed
-Then I press the Register button............................................passed
-Then I see Registration Form text...........................................passed
-Then I enter Apollo in the Doctors Hospital Name field......................passed
-Then I enter Hadapsar in the Doctors Hospital Address field.................passed
-Then I enter Mrunal in the Doctors Name field...............................passed
-Then I enter 23456 in the Doctors SSN field.................................passed
-Then I enter shreyas.patil91@gmail.com in the Doctors email field...........passed
-Then I enter abcd in the Doctors Password field.............................passed
-Then I enter abcd in the Doctors Conform Password field.....................passed
-Then I enter 3128891919 in the Doctors Phone field..........................passed
-Then I press the Doctor Register button.....................................passed
-Then I see Login text.......................................................passed
-Then I check gmail account confirmation mail................................passed
 Then I click switchRole button..............................................passed
 Then I enter shreyas.patil91@gmail.com in the LoginPage Email field.........passed
 Then I enter abcd in the LoginPage Password field...........................passed
 Then I press the Login Page Login button....................................passed
 Then I see Search Patient History label.....................................passed
-Then I press the Logout button to logout the doctor.........................passed
-Then I see Login text.......................................................passed
-]]></system-out>
+Then I enter  in the SearchButtonBar field..................................failed
+Then I click on Search Button...............................................skipped
+Then I check the Please Enter Contact.......................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: Locator map: 
+- native content: "By.id: search_src_text" 
+- html content: "by id or name "btnsearchQuery""
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'Shreyas-PC', ip: '192.168.0.105', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: driver.version: unknown
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:110)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.clear(<generated>)
+	at com.pageFactory.PatientHistoryPage.setSearchQuery(PatientHistoryPage.java:44)
+	at com.stepDefinitions.PatientHistoryDetailsSteps.I_enter_query_in_the_SearchButtonBar_field(PatientHistoryDetailsSteps.java:43)
+	at ✽.Then I enter  in the SearchButtonBar field(doctor_gets_message_when_contact_not_provided.feature:12)
+]]></failure>
 </testcase>
 </testsuite>

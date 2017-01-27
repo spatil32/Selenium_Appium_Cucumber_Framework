@@ -1,5 +1,6 @@
 package com.pageFactory;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -30,8 +31,27 @@ public class PatientHistoryPage
 	@AndroidFindBy(id="btnSearchPatient")
 	public WebElement btnsearchPatient;
 	
+	@AndroidFindBy(id="search_src_text")
+	public WebElement btnsearchQuery;
+
 	public void clickDoctorLogout()
 	{
 		btnDoctorLogout.click();
+	}
+
+	public void setSearchQuery(String text)
+	{
+		btnsearchQuery.clear();
+		btnsearchQuery.sendKeys(text);
+	}
+	
+	public void clickSearchHistory()
+	{
+		btnsearchPatient.click();
+	}
+	
+	public void VerifyToastMessage(AppiumDriver<WebElement> driver, String toastMessage)
+	{
+		Assert.assertTrue("Tost not verified.", driver.findElementByLinkText(toastMessage).getText().equals(toastMessage));
 	}
 }
