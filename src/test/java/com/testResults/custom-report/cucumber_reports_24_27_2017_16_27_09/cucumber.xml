@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="173.007455">
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2017 Shreyas Patil.
+    All rights reserved. This framework or any portion thereof
+    may not be reproduced or used in any manner whatsoever
+    without the express written permission from me.
+   
+    Contributors:
+        Shreyas Patil
+ -->
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="173.007455">
 <testcase classname="Doctor Registration &amp; Login" name="As a valid user Doctor can register &amp; login to my application" time="173.007455">
 <system-out><![CDATA[Given my application is open................................................passed
 Then I see Login text.......................................................passed

@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    Copyright (c) 2017 Shreyas Patil.
+    All rights reserved. This framework or any portion thereof
+    may not be reproduced or used in any manner whatsoever
+    without the express written permission from me.
+   
+    Contributors:
+        Shreyas Patil
+ -->
+
 <testsuite tests="10" failures="0" name="com.features.TestRunner" time="0.045" errors="2" skipped="0">
   <properties>
     <property name="platform" value="android"/>

@@ -1,3 +1,12 @@
+/*******************************************************************************
+ * Copyright (c) 2017 Shreyas Patil.
+ * All rights reserved. This framework or any portion thereof
+ * may not be reproduced or used in any manner whatsoever
+ * without the express written permission from me.
+ *
+ * Contributors:
+ *     Shreyas Patil
+ *******************************************************************************/
 package com.stepDefinitions;
 
 import com.generic.StepBase;
