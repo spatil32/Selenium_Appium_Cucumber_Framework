@@ -1,22 +1,22 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("DoctorRegistration.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("PatientRegistration.feature");
 formatter.feature({
   "line": 2,
-  "name": "Doctor Registration \u0026 Login",
+  "name": "Patient Registration \u0026 Login",
   "description": "",
-  "id": "doctor-registration-\u0026-login",
+  "id": "patient-registration-\u0026-login",
   "keyword": "Feature",
   "tags": [
     {
       "line": 1,
-      "name": "@DoctorRegistration"
+      "name": "@EHSTests"
     }
   ]
 });
 formatter.scenarioOutline({
   "line": 3,
-  "name": "As a valid user Doctor can register \u0026 login to my application",
+  "name": "As a valid user Patient can register \u0026 login to my application",
   "description": "",
-  "id": "doctor-registration-\u0026-login;as-a-valid-user-doctor-can-register-\u0026-login-to-my-application",
+  "id": "patient-registration-\u0026-login;as-a-valid-user-patient-can-register-\u0026-login-to-my-application",
   "type": "scenario_outline",
   "keyword": "Scenario Outline"
 });
@@ -32,165 +32,183 @@ formatter.step({
 });
 formatter.step({
   "line": 6,
-  "name": "I click switchRole button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 7,
   "name": "I press the Register button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 8,
+  "line": 7,
   "name": "I see \u003cRegistration Form\u003e text",
   "keyword": "Then "
 });
 formatter.step({
+  "line": 8,
+  "name": "I enter \u003cfirstName\u003e in the Patinet First Name field",
+  "keyword": "Then "
+});
+formatter.step({
   "line": 9,
-  "name": "I enter \u003chospitalName\u003e in the Doctors Hospital Name field",
+  "name": "I enter \u003clastName\u003e in the Patient Last Name field",
   "keyword": "Then "
 });
 formatter.step({
   "line": 10,
-  "name": "I enter \u003chospitalAddress\u003e in the Doctors Hospital Address field",
+  "name": "I enter \u003cSSN\u003e in the Patient SSN field",
   "keyword": "Then "
 });
 formatter.step({
   "line": 11,
-  "name": "I enter \u003cdoctorName\u003e in the Doctors Name field",
+  "name": "I enter \u003cemail\u003e in the Patient Email field",
   "keyword": "Then "
 });
 formatter.step({
   "line": 12,
-  "name": "I enter \u003cSSN\u003e in the Doctors SSN field",
+  "name": "I enter \u003ccontact\u003e in the Patient Contact field",
   "keyword": "Then "
 });
 formatter.step({
   "line": 13,
-  "name": "I enter \u003cemail\u003e in the Doctors email field",
+  "name": "I enter \u003cemergencyContact\u003e in the Patient Emergency Contact field",
   "keyword": "Then "
 });
 formatter.step({
   "line": 14,
-  "name": "I enter \u003cpassword\u003e in the Doctors Password field",
+  "name": "I enter \u003cpassword\u003e in the Patient Password field",
   "keyword": "Then "
 });
 formatter.step({
   "line": 15,
-  "name": "I enter \u003cpassword\u003e in the Doctors Conform Password field",
+  "name": "I enter \u003cpassword\u003e in the Patient Conform Password field",
   "keyword": "Then "
 });
 formatter.step({
   "line": 16,
-  "name": "I enter \u003ccontact\u003e in the Doctors Phone field",
+  "name": "I press the Patient Register button",
   "keyword": "Then "
 });
 formatter.step({
   "line": 17,
-  "name": "I press the Doctor Register button",
+  "name": "I see \u003cLogin\u003e text",
   "keyword": "Then "
 });
 formatter.step({
   "line": 18,
-  "name": "I see \u003cLogin\u003e text",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 19,
   "name": "I check gmail account confirmation mail",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 20,
-  "name": "I click switchRole button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 21,
+  "line": 19,
   "name": "I enter \u003cemail\u003e in the LoginPage Email field",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 22,
+  "line": 20,
   "name": "I enter \u003cpassword\u003e in the LoginPage Password field",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 23,
+  "line": 21,
   "name": "I press the Login Page Login button",
   "keyword": "Then "
 });
 formatter.step({
+  "line": 22,
+  "name": "I see \u003cfirstName\u003e as firstname on Patient Registration Page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 23,
+  "name": "I see \u003clastName\u003e as lastname on Patient Registration Page",
+  "keyword": "Then "
+});
+formatter.step({
   "line": 24,
-  "name": "I see \u003cPatientHistory\u003e label",
+  "name": "I see \u003cSSN\u003e as SSN on Patient Registration Page",
   "keyword": "Then "
 });
 formatter.step({
   "line": 25,
-  "name": "I press the Logout button to logout the doctor",
+  "name": "I see \u003cemail\u003e as email on Patient Registration Page",
   "keyword": "Then "
 });
 formatter.step({
   "line": 26,
+  "name": "I see \u003ccontact\u003e as contact on Patient Registration Page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 27,
+  "name": "I see \u003cemergencyContact\u003e as emergency contact on Patient Registration Page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 28,
+  "name": "I see \u003cpassword\u003e as password on Patient Registration Page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 29,
+  "name": "I press the Logout button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 30,
   "name": "I see \u003cLogin\u003e text",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 27,
+  "line": 31,
   "name": "",
   "description": "",
-  "id": "doctor-registration-\u0026-login;as-a-valid-user-doctor-can-register-\u0026-login-to-my-application;",
+  "id": "patient-registration-\u0026-login;as-a-valid-user-patient-can-register-\u0026-login-to-my-application;",
   "rows": [
     {
       "cells": [
         "Login",
         "Registration Form",
-        "hospitalName",
-        "hospitalAddress",
-        "doctorName",
+        "firstName",
+        "lastName",
         "SSN",
         "email",
-        "password",
         "contact",
-        "PatientHistory"
+        "emergencyContact",
+        "password"
       ],
-      "line": 28,
-      "id": "doctor-registration-\u0026-login;as-a-valid-user-doctor-can-register-\u0026-login-to-my-application;;1"
+      "line": 32,
+      "id": "patient-registration-\u0026-login;as-a-valid-user-patient-can-register-\u0026-login-to-my-application;;1"
     },
     {
       "cells": [
         "Login",
         "Registration Form",
-        "Apollo",
-        "Hadapsar",
-        "Mrunal",
-        "23456",
-        "shreyas.patil91@gmail.com",
-        "abcd",
+        "Shreyas",
+        "Patil",
+        "12345",
+        "patilsr91@gmail.com",
+        "1111",
         "3128891919",
-        "Search Patient History"
+        "abcd"
       ],
-      "line": 29,
-      "id": "doctor-registration-\u0026-login;as-a-valid-user-doctor-can-register-\u0026-login-to-my-application;;2"
+      "line": 33,
+      "id": "patient-registration-\u0026-login;as-a-valid-user-patient-can-register-\u0026-login-to-my-application;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 68057816206,
+  "duration": 30793762921,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 29,
-  "name": "As a valid user Doctor can register \u0026 login to my application",
+  "line": 33,
+  "name": "As a valid user Patient can register \u0026 login to my application",
   "description": "",
-  "id": "doctor-registration-\u0026-login;as-a-valid-user-doctor-can-register-\u0026-login-to-my-application;;2",
+  "id": "patient-registration-\u0026-login;as-a-valid-user-patient-can-register-\u0026-login-to-my-application;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
       "line": 1,
-      "name": "@DoctorRegistration"
+      "name": "@EHSTests"
     }
   ]
 });
@@ -209,16 +227,11 @@ formatter.step({
 });
 formatter.step({
   "line": 6,
-  "name": "I click switchRole button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 7,
   "name": "I press the Register button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 8,
+  "line": 7,
   "name": "I see Registration Form text",
   "matchedColumns": [
     1
@@ -226,76 +239,76 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 9,
-  "name": "I enter Apollo in the Doctors Hospital Name field",
+  "line": 8,
+  "name": "I enter Shreyas in the Patinet First Name field",
   "matchedColumns": [
     2
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 10,
-  "name": "I enter Hadapsar in the Doctors Hospital Address field",
+  "line": 9,
+  "name": "I enter Patil in the Patient Last Name field",
   "matchedColumns": [
     3
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 11,
-  "name": "I enter Mrunal in the Doctors Name field",
+  "line": 10,
+  "name": "I enter 12345 in the Patient SSN field",
   "matchedColumns": [
     4
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 12,
-  "name": "I enter 23456 in the Doctors SSN field",
+  "line": 11,
+  "name": "I enter patilsr91@gmail.com in the Patient Email field",
   "matchedColumns": [
     5
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 13,
-  "name": "I enter shreyas.patil91@gmail.com in the Doctors email field",
+  "line": 12,
+  "name": "I enter 1111 in the Patient Contact field",
   "matchedColumns": [
     6
   ],
   "keyword": "Then "
 });
 formatter.step({
+  "line": 13,
+  "name": "I enter 3128891919 in the Patient Emergency Contact field",
+  "matchedColumns": [
+    7
+  ],
+  "keyword": "Then "
+});
+formatter.step({
   "line": 14,
-  "name": "I enter abcd in the Doctors Password field",
-  "matchedColumns": [
-    7
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 15,
-  "name": "I enter abcd in the Doctors Conform Password field",
-  "matchedColumns": [
-    7
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 16,
-  "name": "I enter 3128891919 in the Doctors Phone field",
+  "name": "I enter abcd in the Patient Password field",
   "matchedColumns": [
     8
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 17,
-  "name": "I press the Doctor Register button",
+  "line": 15,
+  "name": "I enter abcd in the Patient Conform Password field",
+  "matchedColumns": [
+    8
+  ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 18,
+  "line": 16,
+  "name": "I press the Patient Register button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 17,
   "name": "I see Login text",
   "matchedColumns": [
     0
@@ -303,51 +316,94 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 19,
+  "line": 18,
   "name": "I check gmail account confirmation mail",
   "keyword": "Then "
 });
 formatter.step({
+  "line": 19,
+  "name": "I enter patilsr91@gmail.com in the LoginPage Email field",
+  "matchedColumns": [
+    5
+  ],
+  "keyword": "Then "
+});
+formatter.step({
   "line": 20,
-  "name": "I click switchRole button",
+  "name": "I enter abcd in the LoginPage Password field",
+  "matchedColumns": [
+    8
+  ],
   "keyword": "Then "
 });
 formatter.step({
   "line": 21,
-  "name": "I enter shreyas.patil91@gmail.com in the LoginPage Email field",
+  "name": "I press the Login Page Login button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 22,
+  "name": "I see Shreyas as firstname on Patient Registration Page",
+  "matchedColumns": [
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 23,
+  "name": "I see Patil as lastname on Patient Registration Page",
+  "matchedColumns": [
+    3
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 24,
+  "name": "I see 12345 as SSN on Patient Registration Page",
+  "matchedColumns": [
+    4
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 25,
+  "name": "I see patilsr91@gmail.com as email on Patient Registration Page",
+  "matchedColumns": [
+    5
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 26,
+  "name": "I see 1111 as contact on Patient Registration Page",
   "matchedColumns": [
     6
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 22,
-  "name": "I enter abcd in the LoginPage Password field",
+  "line": 27,
+  "name": "I see 3128891919 as emergency contact on Patient Registration Page",
   "matchedColumns": [
     7
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 23,
-  "name": "I press the Login Page Login button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 24,
-  "name": "I see Search Patient History label",
+  "line": 28,
+  "name": "I see abcd as password on Patient Registration Page",
   "matchedColumns": [
-    9
+    8
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 25,
-  "name": "I press the Logout button to logout the doctor",
+  "line": 29,
+  "name": "I press the Logout button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 26,
+  "line": 30,
   "name": "I see Login text",
   "matchedColumns": [
     0
@@ -358,7 +414,7 @@ formatter.match({
   "location": "PatientRegistrationSteps.My_application_is_open()"
 });
 formatter.result({
-  "duration": 1588918991,
+  "duration": 1239688689,
   "status": "passed"
 });
 formatter.match({
@@ -371,21 +427,14 @@ formatter.match({
   "location": "PatientRegistrationSteps.I_see_Text(String)"
 });
 formatter.result({
-  "duration": 984798008,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginSteps.I_click_switchRole_button()"
-});
-formatter.result({
-  "duration": 425777129,
+  "duration": 1025472751,
   "status": "passed"
 });
 formatter.match({
   "location": "PatientRegistrationSteps.I_press_the_Register_button()"
 });
 formatter.result({
-  "duration": 2023487070,
+  "duration": 1599558894,
   "status": "passed"
 });
 formatter.match({
@@ -398,99 +447,70 @@ formatter.match({
   "location": "PatientRegistrationSteps.I_see_Text(String)"
 });
 formatter.result({
-  "duration": 811346219,
+  "duration": 740922564,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Apollo",
+      "val": "Shreyas",
       "offset": 8
     }
   ],
-  "location": "DoctorRegistrationSteps.I_enter_hospital_name_in_the_Doctors_Hospital_Name_field(String)"
+  "location": "PatientRegistrationSteps.I_enter_firstName_in_the_PatientFName_field(String)"
 });
 formatter.result({
-  "duration": 9113884730,
-  "status": "passed"
+  "duration": 681989144,
+  "error_message": "org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: UiAUtomator shut down unexpectedly (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 229 milliseconds\nBuild info: version: \u00272.52.0\u0027, revision: \u00274c2593cfc3689a7fcd7be52549167e5ccc93ad28\u0027, time: \u00272016-02-11 11:22:43\u0027\nSystem info: host: \u0027Shreyas-PC\u0027, ip: \u0027192.168.0.107\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_102\u0027\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities [{app\u003dC://Users//Shreyas//workspace//EHS_Appium_Automation//application_files//EHS.apk, appPackage\u003dcom.spatil32.emergency_health_services, networkConnectionEnabled\u003dtrue, noReset\u003dtrue, warnings\u003d{}, appWaitPackage\u003dcom.spatil32.emergency_health_services, appWaitActivity\u003dcom.spatil32.emergency_health_services.MainActivity, databaseEnabled\u003dfalse, deviceName\u003dZY223F77GW, platform\u003dLINUX, deviceUDID\u003dZY223F77GW, appActivity\u003dcom.spatil32.emergency_health_services.MainActivity, desired\u003d{app\u003dC://Users//Shreyas//workspace//EHS_Appium_Automation//application_files//EHS.apk, noReset\u003dtrue, platformVersion\u003d7.0, platformName\u003dAndroid, deviceName\u003dZY223F77GW}, platformVersion\u003d7.0, webStorageEnabled\u003dfalse, locationContextEnabled\u003dfalse, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dAndroid}]\nSession ID: 771fb1a7-b809-4584-82bd-ced0266fb1f4\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)\r\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)\r\n\tat io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:33)\r\n\tat io.appium.java_client.MobileElement.execute(MobileElement.java:1)\r\n\tat io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:140)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:39)\r\n\tat io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:58)\r\n\tat io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.clear(\u003cgenerated\u003e)\r\n\tat com.pageFactory.PatientRegistrationPage.setPatientFirstName(PatientRegistrationPage.java:66)\r\n\tat com.stepDefinitions.PatientRegistrationSteps.I_enter_firstName_in_the_PatientFName_field(PatientRegistrationSteps.java:63)\r\n\tat ✽.Then I enter Shreyas in the Patinet First Name field(PatientRegistration.feature:8)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Hadapsar",
+      "val": "Patil",
       "offset": 8
     }
   ],
-  "location": "DoctorRegistrationSteps.I_enter_hospital_address_in_the_Doctors_Hospital_Address_field(String)"
+  "location": "PatientRegistrationSteps.I_enter_lastName_in_the_Patient_Last_Name_field(String)"
 });
 formatter.result({
-  "duration": 9721329888,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Mrunal",
+      "val": "12345",
       "offset": 8
     }
   ],
-  "location": "DoctorRegistrationSteps.I_enter_name_in_the_Doctors_Name_field(String)"
+  "location": "PatientRegistrationSteps.I_enter_SSN_in_the_Patient_SSN_field(String)"
 });
 formatter.result({
-  "duration": 9272724637,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "23456",
+      "val": "patilsr91@gmail.com",
       "offset": 8
     }
   ],
-  "location": "DoctorRegistrationSteps.I_enter_ssn_in_the_Doctors_SSN_field(String)"
+  "location": "PatientRegistrationSteps.I_enter_email_in_the_Patient_Email_field(String)"
 });
 formatter.result({
-  "duration": 9028249155,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "shreyas.patil91@gmail.com",
+      "val": "1111",
       "offset": 8
     }
   ],
-  "location": "DoctorRegistrationSteps.I_enter_email_in_the_Doctors_email_field(String)"
+  "location": "PatientRegistrationSteps.I_enter_contact_in_the_Patient_Contact_field(String)"
 });
 formatter.result({
-  "duration": 9443099980,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "abcd",
-      "offset": 8
-    }
-  ],
-  "location": "DoctorRegistrationSteps.I_enter_password_in_the_Doctors_Password_field(String)"
-});
-formatter.result({
-  "duration": 9462580829,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "abcd",
-      "offset": 8
-    }
-  ],
-  "location": "DoctorRegistrationSteps.I_enter_confirm_password_in_the_Doctors_Conform_Password_field(String)"
-});
-formatter.result({
-  "duration": 10082154248,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -499,18 +519,40 @@ formatter.match({
       "offset": 8
     }
   ],
-  "location": "DoctorRegistrationSteps.I_enter__phone_in_the_Doctors_Phone_field(String)"
+  "location": "PatientRegistrationSteps.I_enter_Emergency_Contact(String)"
 });
 formatter.result({
-  "duration": 9456874930,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "DoctorRegistrationSteps.I_press_the_Doctor_Register_button()"
+  "arguments": [
+    {
+      "val": "abcd",
+      "offset": 8
+    }
+  ],
+  "location": "PatientRegistrationSteps.I_enter_password_in_the_Patient_Password_field(String)"
 });
 formatter.result({
-  "duration": 1416470794,
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "abcd",
+      "offset": 8
+    }
+  ],
+  "location": "PatientRegistrationSteps.I_enter_password_in_the_Patient_Confirm_Password_field(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "PatientRegistrationSteps.I_press_the_Patient_Register_button()"
+});
+formatter.result({
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -522,35 +564,25 @@ formatter.match({
   "location": "PatientRegistrationSteps.I_see_Text(String)"
 });
 formatter.result({
-  "duration": 1355371171,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "PatientRegistrationSteps.I_check_gmail_account_confirmation_mail()"
 });
 formatter.result({
-  "duration": 7070416827,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginSteps.I_click_switchRole_button()"
-});
-formatter.result({
-  "duration": 1351503985,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "shreyas.patil91@gmail.com",
+      "val": "patilsr91@gmail.com",
       "offset": 8
     }
   ],
   "location": "LoginSteps.I_enter_email(String)"
 });
 formatter.result({
-  "duration": 12573303062,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -562,35 +594,103 @@ formatter.match({
   "location": "LoginSteps.I_enter_password(String)"
 });
 formatter.result({
-  "duration": 8910759008,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginSteps.I_press_login_button()"
 });
 formatter.result({
-  "duration": 1649061667,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Search Patient History",
+      "val": "Shreyas",
       "offset": 6
     }
   ],
-  "location": "PatientHistoryDetailsSteps.I_see_PatientHistory_label(String)"
+  "location": "PatientDetailsSteps.I_see_firstname_on_Patient_Registration_Page(String)"
 });
 formatter.result({
-  "duration": 890852448,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "PatientHistoryDetailsSteps.I_press_the_Logout_button_to_logout_the_doctor()"
+  "arguments": [
+    {
+      "val": "Patil",
+      "offset": 6
+    }
+  ],
+  "location": "PatientDetailsSteps.I_see_lastname_on_Patient_Registration_Page(String)"
 });
 formatter.result({
-  "duration": 3317199305,
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "12345",
+      "offset": 6
+    }
+  ],
+  "location": "PatientDetailsSteps.I_see_ssn_on_Patient_Registration_Page(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "patilsr91@gmail.com",
+      "offset": 6
+    }
+  ],
+  "location": "PatientDetailsSteps.I_see_email_on_Patient_Registration_Page(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1111",
+      "offset": 6
+    }
+  ],
+  "location": "PatientDetailsSteps.I_see_contact_on_Patient_Registration_Page(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "3128891919",
+      "offset": 6
+    }
+  ],
+  "location": "PatientDetailsSteps.I_see_emergency_contact_on_Patient_Registration_Page(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "abcd",
+      "offset": 6
+    }
+  ],
+  "location": "PatientDetailsSteps.I_see_password_on_Patient_Registration_Page(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "PatientDetailsSteps.I_press_the_Logout_button()"
+});
+formatter.result({
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -602,11 +702,11 @@ formatter.match({
   "location": "PatientRegistrationSteps.I_see_Text(String)"
 });
 formatter.result({
-  "duration": 414243505,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
-  "duration": 3480860627,
-  "status": "passed"
+  "duration": 11571112,
+  "error_message": "org.openqa.selenium.remote.SessionNotFoundException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 9 milliseconds\nBuild info: version: \u00272.52.0\u0027, revision: \u00274c2593cfc3689a7fcd7be52549167e5ccc93ad28\u0027, time: \u00272016-02-11 11:22:43\u0027\nSystem info: host: \u0027Shreyas-PC\u0027, ip: \u0027192.168.0.107\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_102\u0027\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities [{app\u003dC://Users//Shreyas//workspace//EHS_Appium_Automation//application_files//EHS.apk, appPackage\u003dcom.spatil32.emergency_health_services, networkConnectionEnabled\u003dtrue, noReset\u003dtrue, warnings\u003d{}, appWaitPackage\u003dcom.spatil32.emergency_health_services, appWaitActivity\u003dcom.spatil32.emergency_health_services.MainActivity, databaseEnabled\u003dfalse, deviceName\u003dZY223F77GW, platform\u003dLINUX, deviceUDID\u003dZY223F77GW, appActivity\u003dcom.spatil32.emergency_health_services.MainActivity, desired\u003d{app\u003dC://Users//Shreyas//workspace//EHS_Appium_Automation//application_files//EHS.apk, noReset\u003dtrue, platformVersion\u003d7.0, platformName\u003dAndroid, deviceName\u003dZY223F77GW}, platformVersion\u003d7.0, webStorageEnabled\u003dfalse, locationContextEnabled\u003dfalse, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dAndroid}]\nSession ID: 771fb1a7-b809-4584-82bd-ced0266fb1f4\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:164)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)\r\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:235)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:335)\r\n\tat com.generic.StepBase.takeScreenshot(StepBase.java:87)\r\n\tat com.generic.StepBase.tearDown(StepBase.java:80)\r\n\tat com.Hooks.Hooks.removeHook(Hooks.java:33)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:37)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:13)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:31)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:223)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:211)\r\n\tat cucumber.runtime.Runtime.runAfterHooks(Runtime.java:205)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:127)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:26)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\r\n\tat cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:127)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:26)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\r\n\tat cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:98)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\r\n",
+  "status": "failed"
 });
 });

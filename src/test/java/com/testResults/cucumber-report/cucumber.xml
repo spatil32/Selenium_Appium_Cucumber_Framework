@@ -1,28 +1,66 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="191.903084">
-<testcase classname="Doctor Registration &amp; Login" name="As a valid user Doctor can register &amp; login to my application" time="191.903084">
-<system-out><![CDATA[Given my application is open................................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="36.092966">
+<testcase classname="Patient Registration &amp; Login" name="As a valid user Patient can register &amp; login to my application" time="36.092966">
+<failure message="org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: UiAUtomator shut down unexpectedly (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 229 milliseconds&#10;Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'&#10;System info: host: 'Shreyas-PC', ip: '192.168.0.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities [{app=C://Users//Shreyas//workspace//EHS_Appium_Automation//application_files//EHS.apk, appPackage=com.spatil32.emergency_health_services, networkConnectionEnabled=true, noReset=true, warnings={}, appWaitPackage=com.spatil32.emergency_health_services, appWaitActivity=com.spatil32.emergency_health_services.MainActivity, databaseEnabled=false, deviceName=ZY223F77GW, platform=LINUX, deviceUDID=ZY223F77GW, appActivity=com.spatil32.emergency_health_services.MainActivity, desired={app=C://Users//Shreyas//workspace//EHS_Appium_Automation//application_files//EHS.apk, noReset=true, platformVersion=7.0, platformName=Android, deviceName=ZY223F77GW}, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]&#10;Session ID: 771fb1a7-b809-4584-82bd-ced0266fb1f4&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)&#13;&#10;&#9;at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)&#13;&#10;&#9;at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)&#13;&#10;&#9;at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)&#13;&#10;&#9;at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:33)&#13;&#10;&#9;at io.appium.java_client.MobileElement.execute(MobileElement.java:1)&#13;&#10;&#9;at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:140)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:39)&#13;&#10;&#9;at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:58)&#13;&#10;&#9;at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.clear(&lt;generated&gt;)&#13;&#10;&#9;at com.pageFactory.PatientRegistrationPage.setPatientFirstName(PatientRegistrationPage.java:66)&#13;&#10;&#9;at com.stepDefinitions.PatientRegistrationSteps.I_enter_firstName_in_the_PatientFName_field(PatientRegistrationSteps.java:63)&#13;&#10;&#9;at ✽.Then I enter Shreyas in the Patinet First Name field(PatientRegistration.feature:8)&#13;&#10;"><![CDATA[Given my application is open................................................passed
 Then I see Login text.......................................................passed
-Then I click switchRole button..............................................passed
 Then I press the Register button............................................passed
 Then I see Registration Form text...........................................passed
-Then I enter Apollo in the Doctors Hospital Name field......................passed
-Then I enter Hadapsar in the Doctors Hospital Address field.................passed
-Then I enter Mrunal in the Doctors Name field...............................passed
-Then I enter 23456 in the Doctors SSN field.................................passed
-Then I enter shreyas.patil91@gmail.com in the Doctors email field...........passed
-Then I enter abcd in the Doctors Password field.............................passed
-Then I enter abcd in the Doctors Conform Password field.....................passed
-Then I enter 3128891919 in the Doctors Phone field..........................passed
-Then I press the Doctor Register button.....................................passed
-Then I see Login text.......................................................passed
-Then I check gmail account confirmation mail................................passed
-Then I click switchRole button..............................................passed
-Then I enter shreyas.patil91@gmail.com in the LoginPage Email field.........passed
-Then I enter abcd in the LoginPage Password field...........................passed
-Then I press the Login Page Login button....................................passed
-Then I see Search Patient History label.....................................passed
-Then I press the Logout button to logout the doctor.........................passed
-Then I see Login text.......................................................passed
-]]></system-out>
+Then I enter Shreyas in the Patinet First Name field........................failed
+Then I enter Patil in the Patient Last Name field...........................skipped
+Then I enter 12345 in the Patient SSN field.................................skipped
+Then I enter patilsr91@gmail.com in the Patient Email field.................skipped
+Then I enter 1111 in the Patient Contact field..............................skipped
+Then I enter 3128891919 in the Patient Emergency Contact field..............skipped
+Then I enter abcd in the Patient Password field.............................skipped
+Then I enter abcd in the Patient Conform Password field.....................skipped
+Then I press the Patient Register button....................................skipped
+Then I see Login text.......................................................skipped
+Then I check gmail account confirmation mail................................skipped
+Then I enter patilsr91@gmail.com in the LoginPage Email field...............skipped
+Then I enter abcd in the LoginPage Password field...........................skipped
+Then I press the Login Page Login button....................................skipped
+Then I see Shreyas as firstname on Patient Registration Page................skipped
+Then I see Patil as lastname on Patient Registration Page...................skipped
+Then I see 12345 as SSN on Patient Registration Page........................skipped
+Then I see patilsr91@gmail.com as email on Patient Registration Page........skipped
+Then I see 1111 as contact on Patient Registration Page.....................skipped
+Then I see 3128891919 as emergency contact on Patient Registration Page.....skipped
+Then I see abcd as password on Patient Registration Page....................skipped
+Then I press the Logout button..............................................skipped
+Then I see Login text.......................................................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: UiAUtomator shut down unexpectedly (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 229 milliseconds
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'Shreyas-PC', ip: '192.168.0.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=C://Users//Shreyas//workspace//EHS_Appium_Automation//application_files//EHS.apk, appPackage=com.spatil32.emergency_health_services, networkConnectionEnabled=true, noReset=true, warnings={}, appWaitPackage=com.spatil32.emergency_health_services, appWaitActivity=com.spatil32.emergency_health_services.MainActivity, databaseEnabled=false, deviceName=ZY223F77GW, platform=LINUX, deviceUDID=ZY223F77GW, appActivity=com.spatil32.emergency_health_services.MainActivity, desired={app=C://Users//Shreyas//workspace//EHS_Appium_Automation//application_files//EHS.apk, noReset=true, platformVersion=7.0, platformName=Android, deviceName=ZY223F77GW}, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 771fb1a7-b809-4584-82bd-ced0266fb1f4
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:33)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:39)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:58)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.clear(<generated>)
+	at com.pageFactory.PatientRegistrationPage.setPatientFirstName(PatientRegistrationPage.java:66)
+	at com.stepDefinitions.PatientRegistrationSteps.I_enter_firstName_in_the_PatientFName_field(PatientRegistrationSteps.java:63)
+	at ✽.Then I enter Shreyas in the Patinet First Name field(PatientRegistration.feature:8)
+]]></failure>
 </testcase>
 </testsuite>
