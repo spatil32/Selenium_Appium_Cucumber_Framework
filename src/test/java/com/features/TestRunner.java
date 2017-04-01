@@ -20,7 +20,7 @@ import cucumber.api.junit.Cucumber;
 		strict = true,
 		features = {"src/test/java/com/features"},
 		glue = {"com.Hooks", "com.stepDefinitions"},
-		tags = {"@BlankNumberPatientSearch"},
+		tags = {"@DoctorRegistration"},
 		monochrome = true,
 		format = {
 				"pretty",
