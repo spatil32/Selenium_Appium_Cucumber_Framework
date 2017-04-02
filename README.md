@@ -52,7 +52,7 @@ pom.xml- Maven dependency file.
 
 Steps to configure the Github repository with Jenkins:
 
-i. Download latest jenkins.war file by navigating to #https://jenkins.io/doc/.
+i. Download latest jenkins.war file by navigating to https://jenkins.io/doc/.
 
 ii. Open the terminal where jenkins.war file is saved and run the command: java -jar jenkins.war
 
