@@ -48,3 +48,26 @@ F. com.testResult:
 androidConfig.properties file- confuguration file used to set value of android device name, apk file name and start activity.
 
 pom.xml- Maven dependency file.
+
+
+Steps to configure the Github repository with Jenkins:
+i. Download latest jenkins.war file by navigating to https://jenkins.io/doc/.
+ii. Open the terminal where jenkins.war file is saved and run the command: java -jar jenkins.war
+iii. Go to browser and navigate to http://localhost:8080 to open the jenkins server console.
+iv. If you are a new user, you will be guided with steos to follow to create a new profile and login/password for future perspects, else you will be shown a login screen.
+v. Install required plugins for the project execution e.g. Maven plugin and Github plugin for this project.
+vi. Once, plugins are installed, create new jo or item to start configuring your project.
+vii. Give item name and select "Github Organization" and click "Ok".
+vii. Go to "Configure" option and check "Github project" checkbox and give project url.
+viii. Check "This project is parameterized" checkbox and add choice parameters as:
+        a. Name: platform
+           Choices: android
+                    iOS
+           Description: Platform name
+        b. Name: device
+           Choices: MotoG4_7.0.1
+                    Galaxy_S4_5.0.1
+           Description: Device name
+ix. In Source Code Management section, select "Git" radio button and provide project URL and hithub account credentials.
+x. In the build section, set ROOT pom=pom.xml and Goals and options as: "test -Dplatform="$PLATFORM" -Ddevice="$DEVICE". Click Apply and Save.
+xi. Start the appium server, In Jenkins, Click on "Build with Parameters" and select platform name, device name. Click on "Build" button to start the execution. (This will execute the code with last push in Github repo). 
