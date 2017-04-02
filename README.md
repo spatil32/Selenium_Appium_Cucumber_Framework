@@ -34,7 +34,8 @@ This framework is built using Maven build tool with related dependencies in pom.
 ## C. com.Hooks: 
   i. Hooks.java: This is the important class in triggering the execution. Once, the trigger request is passed from TestRunner.java class, Hooks class maintains the specified instance of webdriver for current scenario or test case.
 
-## D. com.PageFacory: The project is designed using POM (Page-Object Model) structure where webelements and functionalities specifically related to those webelements on separate webpage are mapped to a single java class. 
+## D. com.PageFacory: 
+The project is designed using POM (Page-Object Model) structure where webelements and functionalities specifically related to those webelements on separate webpage are mapped to a single java class. 
     i. DoctorRegistrationPage.java: It contains WebElement paths (id/css Selectors) and functions related objects on Doctor's registration activity page. 
     ii. LoginPage.java: It contains WebElement paths (id/css Selectors) and functions related objects on Login activity.
     iii. PatientDetailsPage.java: It contains WebElement paths (id/css Selectors) and functions related objects on PatientDetailsPage activity.
