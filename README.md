@@ -10,7 +10,7 @@ Instructions to execute the project:
 - Step 5: Once your execution is done, navigate to GenerateCustomReport.java file in "generic" package. 
           Run the file with JUnit test to create the report folder with execution date.
 
-The report file will be stired in "custom-reports" folder in "tesResults" package.
+The report file will be stored in "custom-reports" folder in "tesResults" package.
 
 # Requirements:
 
