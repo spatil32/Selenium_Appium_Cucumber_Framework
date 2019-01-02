@@ -2,11 +2,14 @@
 This is the Selenium_Appium_Cucumber behavior driven development framework built to test native &amp; hybrid mobile applications using Appium tool,cucumber html reporting, Java programming and Maven. Refer Readme for framework structure and way to trigger the execution.
 
 Instructions to execute the project:
-Step 1: Set platform name i.e. either android or iOS.
-Step 2: Create the device configuration file by navigating to "/src/test/java/com/mobileConfig/". The mobile config file must contain device id, platform name and OS version.
-Step 3: Right click on project and go to "Run As->Maven Build".
-Step 4: In the goals textbox set goals as example: test -Dplatform=android -Ddevice=MotoG4_7.0.1
-Step 5: Once your execution is done, navigate to GenerateCustomReport.java file in "generic" package. Run the file with JUnit test to create the report folder with execution date.
+- Step 1: Set platform name i.e. either android or iOS.
+- Step 2: Create the device configuration file by navigating to "/src/test/java/com/mobileConfig/". 
+          The mobile config file must contain device id, platform name and OS version.
+- Step 3: Right click on project and go to "Run As->Maven Build".
+- Step 4: In the goals textbox set goals as example: test -Dplatform=android -Ddevice=MotoG4_7.0.1
+- Step 5: Once your execution is done, navigate to GenerateCustomReport.java file in "generic" package. 
+          Run the file with JUnit test to create the report folder with execution date.
+
 The report file will be stired in "custom-reports" folder in "tesResults" package.
 
 # Requirements:
