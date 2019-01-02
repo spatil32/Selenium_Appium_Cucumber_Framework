@@ -1,5 +1,5 @@
 # Selenium_Appium_Cucumber_Framework
-This is the Selenium_Appium_Cucumber behavior driven development framework built to test native &amp; hybrid mobile applications using Appium tool,cucumber html reporting, Java programming and Maven. Refer Readme.txt for framework structure and way to trigger the execution.
+This is the Selenium_Appium_Cucumber behavior driven development framework built to test native &amp; hybrid mobile applications using Appium tool,cucumber html reporting, Java programming and Maven. Refer Readme for framework structure and way to trigger the execution.
 
 Instructions to execute the project:
 Step 1: Set platform name i.e. either android or iOS.
